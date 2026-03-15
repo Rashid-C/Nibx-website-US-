@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import TrustedBy from "./components/TrustedBy";
 import Services from "./components/Services";
 import ServiceCard from "./components/ServiceCard";
+import OurWork from "./components/OurWork";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -16,7 +17,7 @@ const App = () => {
       <Hero />
       <TrustedBy />
       <Services />
-     
+      <OurWork />
     </div>
   );
 };
