@@ -11,34 +11,40 @@ const OurWork = () => {
 
     const workData = [
         {
-            title: "Mobile app marketing",
-            description: "We turn bold ideas into powerful digital solutions that connect, engage...",
+            title: "Enterprise Laptop Deployment",
+            description: "Procured, graded and delivered 500+ refurbished Dell Latitude units to a Florida logistics firm — fully tested and shipped within 5 business days.",
             image: assets.work_mobile_app,
+            tag: "Fulfillment",
         },
         {
-            title: "Dashboard management",
-            description: "We help you execute your plan and deliver results.",
+            title: "Office Technology Refresh",
+            description: "Supplied monitors, desktops and printers for a 200-seat call centre upgrade across two US states — single point-of-contact, on-time delivery.",
             image: assets.work_dashboard_management,
+            tag: "Distribution",
         },
         {
-            title: "Fitness app promotion",
-            description: "We help you create a marketing strategy that drives results.",
+            title: "School District IT Rollout",
+            description: "Delivered 300 All-in-One PCs, accessories and storage drives for a Miami-Dade school district deployment managed end-to-end from our warehouse.",
             image: assets.work_fitness_app,
+            tag: "Warehousing",
         },
         {
-            title: "Brand identity design",
-            description: "We craft compelling brand identities that leave a lasting impression.",
+            title: "GPU & Component Batch",
+            description: "High-volume GPU and SSD fulfilment for a US-based PC builder network — bulk sourced, quality-checked and shipped in consolidated freight loads.",
             image: assets.work_mobile_app,
+            tag: "Procurement",
         },
         {
-            title: "Social media campaigns",
-            description: "Data-driven campaigns that grow your audience and boost engagement.",
-            image: assets.work_fitness_app,
-        },
-        {
-            title: "Analytics & reporting",
-            description: "Clear insights and dashboards that help you make smarter decisions.",
+            title: "UAE Cross-Border Shipment",
+            description: "Coordinated a 2,000-unit electronics export to AZC Electronics Trading LLC for GCC enterprise distribution — customs-cleared and door-delivered.",
             image: assets.work_dashboard_management,
+            tag: "Export",
+        },
+        {
+            title: "White-Label Kitting Programme",
+            description: "Custom-branded bundles of keyboards, mice and headsets for a remote-work rollout across 14 corporate offices — packaged and labelled per client spec.",
+            image: assets.work_fitness_app,
+            tag: "Custom Fulfillment",
         },
     ];
 
@@ -51,9 +57,9 @@ const OurWork = () => {
     };
 
     const variants = {
-        enter: (dir) => ({ opacity: 0, x: dir > 0 ? 60 : -60 }),
+        enter:  (dir) => ({ opacity: 0, x: dir > 0 ? 60 : -60 }),
         center: { opacity: 1, x: 0 },
-        exit: (dir) => ({ opacity: 0, x: dir > 0 ? -60 : 60 }),
+        exit:   (dir) => ({ opacity: 0, x: dir > 0 ? -60 : 60 }),
     };
 
     return (
@@ -66,11 +72,10 @@ const OurWork = () => {
             className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white"
         >
             <Title
-                title="Our latest work"
-                desc="From strategy to execution, we craft digital solutions that move your business forward."
+                title="Operations in the field"
+                desc="Real bulk orders fulfilled — enterprise deployments, warehoused stock, cross-border exports and custom fulfilment programmes."
             />
 
-            {/* grid with page transition */}
             <div className="w-full max-w-5xl overflow-hidden">
                 <AnimatePresence mode="wait" custom={direction}>
                     <motion.div
@@ -89,23 +94,29 @@ const OurWork = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.15 }}
                                 key={index}
-                                className="hover:scale-102 duration-500 transition-all cursor-pointer"
+                                className="group hover:scale-102 duration-500 transition-all cursor-default"
                             >
-                                <img
-                                    src={work.image}
-                                    className="w-full rounded-xl"
-                                    alt={work.title}
-                                    loading="lazy"
-                                />
-                                <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
-                                <p className="text-sm opacity-60 w-5/6">{work.description}</p>
+                                <div className="relative overflow-hidden rounded-xl">
+                                    <img
+                                        src={work.image}
+                                        className="w-full group-hover:scale-105 transition-transform duration-500"
+                                        alt={work.title}
+                                        loading="lazy"
+                                    />
+                                    {/* tag overlay */}
+                                    <span className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-primary/90 text-white backdrop-blur-sm">
+                                        {work.tag}
+                                    </span>
+                                </div>
+                                <h3 className="mt-3 mb-1.5 text-base font-semibold">{work.title}</h3>
+                                <p className="text-sm opacity-60 leading-relaxed">{work.description}</p>
                             </motion.div>
                         ))}
                     </motion.div>
                 </AnimatePresence>
             </div>
 
-            {/* pagination controls */}
+            {/* pagination */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +124,6 @@ const OurWork = () => {
                 viewport={{ once: false }}
                 className="flex items-center gap-2 mt-2"
             >
-                {/* prev */}
                 <button
                     onClick={() => goTo(page - 1)}
                     disabled={page === 0}
@@ -123,7 +133,6 @@ const OurWork = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                 </button>
 
-                {/* page numbers */}
                 {Array.from({ length: totalPages }).map((_, i) => (
                     <button
                         key={i}
@@ -140,7 +149,6 @@ const OurWork = () => {
                     </button>
                 ))}
 
-                {/* next */}
                 <button
                     onClick={() => goTo(page + 1)}
                     disabled={page === totalPages - 1}

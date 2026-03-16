@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import assets from "../assets/assets";
 import { motion } from "motion/react";
 import toast from "react-hot-toast";
@@ -22,11 +23,12 @@ const Footer = ({ theme }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
-            className="bg-slate-50 dark:bg-gray-900 pt-10 sm:pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40"
+            className="bg-slate-50 dark:bg-gray-900 pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40"
         >
             {/* footer top */}
+            <div className="flex justify-between lg:items-start max-lg:flex-col gap-10">
 
-            <div className="flex justify-between lg:items-center max-lg:flex-col gap-10">
+                {/* left — brand + nav */}
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -34,50 +36,59 @@ const Footer = ({ theme }) => {
                     viewport={{ once: false }}
                     className="space-y-5 text-sm text-gray-700 dark:text-gray-400"
                 >
-                    <img
-                        src={theme === "dark" ? assets.logo_dark : assets.logo}
-                        className="w-32 sm:w-44"
-                        alt="logo"
-                    />
-                    <p className="max-w-md">
-                        From strategy to execution, we craft digital solutions that move
-                        your business forward.
+                    <Link to="/">
+                        <img
+                            src={theme === "dark" ? assets.logo_dark : assets.logo}
+                            className="w-36 sm:w-44"
+                            alt="NIBX L.L.C. logo"
+                        />
+                    </Link>
+                    <p className="max-w-xs leading-relaxed">
+                        Electronics logistics &amp; distribution company based in{" "}
+                        <span className="font-semibold text-gray-600 dark:text-gray-300">Miami, Florida</span>.
+                        Warehousing, bulk procurement, quality control and US-wide distribution of electronics.
                     </p>
-                    <ul className="flex gap-8">
-                        <li>
-                            <a className="hover:text-primary" href="#hero">
-                                Home
+
+                    {/* company info */}
+                    <div className="space-y-1 text-xs text-gray-500 dark:text-gray-500">
+                        <p className="font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">NIBX L.L.C. — US HQ</p>
+                        <p>7931 NW 68th St, Miami, Florida 33166</p>
+                        <p>USA · Bulk Electronics Supplier</p>
+                        <p className="mt-3 font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">AZC Electronics Trading LLC</p>
+                        <p>UAE Subsidiary ·{" "}
+                            <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                                azcstore.com
                             </a>
-                        </li>
+                        </p>
+                    </div>
+
+                    {/* nav links */}
+                    <ul className="flex flex-wrap gap-6">
+                        <li><Link className="hover:text-primary transition-colors" to="/">Home</Link></li>
+                        <li><Link className="hover:text-primary transition-colors" to="/products">Products</Link></li>
+                        <li><a className="hover:text-primary transition-colors" href="/#about">About</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="/#services">Categories</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="/#contact-us">Contact</a></li>
                         <li>
-                            <a className="hover:text-primary" href="#services">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a className="hover:text-primary" href="#our-work">
-                                Our Work
-                            </a>
-                        </li>
-                        <li>
-                            <a className="hover:text-primary" href="#contact-us">
-                                Contact Us
+                            <a className="hover:text-primary transition-colors" href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer">
+                                AZC UAE ↗
                             </a>
                         </li>
                     </ul>
                 </motion.div>
+
+                {/* right — newsletter */}
                 <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                     viewport={{ once: false }}
-                    className="text-gray-600 dark:text-gray-400"
+                    className="text-gray-600 dark:text-gray-400 max-w-sm w-full"
                 >
-                    <h3 className="font-semibold">Subscribe to our newsletter</h3>
+                    <h3 className="font-semibold text-gray-700 dark:text-gray-300">Subscribe to our newsletter</h3>
                     <p className="text-sm mt-2 mb-6">
-                        The latest news, articles, and resources, sent to your inbox weekly.
+                        Stock updates, bulk deals and new arrivals — sent to your inbox weekly.
                     </p>
-
                     <form onSubmit={handleSubscribe} className="flex gap-2 text-sm" noValidate>
                         <label htmlFor="newsletter-email" className="sr-only">Email address</label>
                         <input
@@ -88,12 +99,13 @@ const Footer = ({ theme }) => {
                             placeholder="Enter your email"
                             className="w-full p-3 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500"
                         />
-                        <button type="submit" className="bg-primary text-white rounded px-6 hover:scale-103 transition-all">
+                        <button type="submit" className="bg-primary text-white rounded px-6 hover:scale-103 transition-all whitespace-nowrap">
                             Subscribe
                         </button>
                     </form>
                 </motion.div>
             </div>
+
             <hr className="border-gray-300 dark:border-gray-600 my-6" />
 
             {/* footer bottom */}
@@ -104,7 +116,6 @@ const Footer = ({ theme }) => {
                 viewport={{ once: false }}
                 className="pb-6 text-sm text-gray-500 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 flex-wrap"
             >
-                {/* left — copyright + dev credit */}
                 <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-center sm:text-left">
                     <p>Copyright 2026 &copy; NIBX. All rights reserved.</p>
                     <span className="hidden sm:inline text-gray-300 dark:text-gray-600">|</span>
@@ -130,7 +141,6 @@ const Footer = ({ theme }) => {
                     </p>
                 </div>
 
-                {/* right — socials */}
                 <div className="flex items-center gap-4">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="opacity-70 hover:opacity-100 transition-opacity"><img src={assets.facebook_icon} alt="" aria-hidden="true" /></a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="opacity-70 hover:opacity-100 transition-opacity"><img src={assets.twitter_icon} alt="" aria-hidden="true" /></a>

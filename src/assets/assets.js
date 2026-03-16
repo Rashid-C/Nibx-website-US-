@@ -29,6 +29,7 @@ import google_logo from './google_logo.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
+import rashid_c from './rashid_c.png'
 
 
 export const company_logos = [
@@ -65,18 +66,19 @@ const assets = {
   logo_dark,
   menu_icon_dark,
   sun_icon,
-  moon_icon
+  moon_icon,
+  rashid_c
 }
 
 export default assets
 
 export const teamData = [
-  { name: 'Haley Carter', title: 'CEO & founder', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
-  { name: 'James Walker', title: 'Ads manager', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
-  { name: 'Jessica Morgan', title: 'Vice president', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop' },
-  { name: 'Ashley Bennett', title: 'Marketing & sales', image: 'https://randomuser.me/api/portraits/women/10.jpg' },
-  { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
-  { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
-  { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
-  { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
+  { name: 'Nibal Moidu',  title: 'CEO & Founder',            image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
+  { name: 'Rashid C',     title: 'Software Developer',        image: rashid_c, link: 'https://rashidc.site/' },
+  { name: 'Johar',        title: 'Main Accountant',           image: 'https://randomuser.me/api/portraits/men/32.jpg' },
+  { name: 'Jishan',       title: 'Accountant',                image: 'https://randomuser.me/api/portraits/men/45.jpg' },
+  { name: 'Dinesh',       title: 'Sr. Sales',                 image: 'https://randomuser.me/api/portraits/men/52.jpg' },
+  { name: 'Faisal',       title: 'Jr. Sales',                 image: 'https://randomuser.me/api/portraits/men/61.jpg' },
+  { name: 'Aadhil',       title: 'Coordination Staff',        image: 'https://randomuser.me/api/portraits/men/78.jpg' },
+  { name: 'Rafeeque',     title: 'Team Member',               image: 'https://randomuser.me/api/portraits/men/85.jpg' },
 ]
