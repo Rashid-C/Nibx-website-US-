@@ -102,14 +102,40 @@ const Footer = ({ theme }) => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: false }}
-                className="pb-6 text-sm text-gray-500 flex justify-center sm:justify-between gap-4 flex-wrap"
+                className="pb-6 text-sm text-gray-500 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 flex-wrap"
             >
-                <p>Copyright 2026 © NIBX - All Right Reserved.</p>
-                <div className="flex items-center justify-between gap-4">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src={assets.facebook_icon} alt="" aria-hidden="true" /></a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src={assets.twitter_icon} alt="" aria-hidden="true" /></a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src={assets.instagram_icon} alt="" aria-hidden="true" /></a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src={assets.linkedin_icon} alt="" aria-hidden="true" /></a>
+                {/* left — copyright + dev credit */}
+                <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-center sm:text-left">
+                    <p>Copyright 2026 &copy; NIBX. All rights reserved.</p>
+                    <span className="hidden sm:inline text-gray-300 dark:text-gray-600">|</span>
+                    <p className="text-xs text-gray-400 dark:text-gray-500">
+                        Designed &amp; Developed by{" "}
+                        <a
+                            href="https://rashidc.site"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold text-primary hover:underline underline-offset-2 transition-all"
+                        >
+                            Rashid C
+                        </a>
+                        {" "}·{" "}
+                        <a
+                            href="https://www.linkedin.com/in/rashid-c"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-primary hover:underline underline-offset-2 transition-all"
+                        >
+                            LinkedIn
+                        </a>
+                    </p>
+                </div>
+
+                {/* right — socials */}
+                <div className="flex items-center gap-4">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="opacity-70 hover:opacity-100 transition-opacity"><img src={assets.facebook_icon} alt="" aria-hidden="true" /></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="opacity-70 hover:opacity-100 transition-opacity"><img src={assets.twitter_icon} alt="" aria-hidden="true" /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="opacity-70 hover:opacity-100 transition-opacity"><img src={assets.instagram_icon} alt="" aria-hidden="true" /></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="opacity-70 hover:opacity-100 transition-opacity"><img src={assets.linkedin_icon} alt="" aria-hidden="true" /></a>
                 </div>
             </motion.div>
         </motion.div>
