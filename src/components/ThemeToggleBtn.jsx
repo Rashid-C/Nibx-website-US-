@@ -20,19 +20,21 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
 
   return (
     <>
-      <button>
+      <button
+        type="button"
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-500"
+      >
         {theme === "dark" ? (
           <img
-            onClick={() => setTheme("light")}
             src={assets.sun_icon}
-            className="size-8.5 p-1.5 border border-gray-500 rounded-full"
+            className="h-5 w-5"
             alt="sun icon"
           />
         ) : (
           <img
-            onClick={() => setTheme("dark")}
             src={assets.moon_icon}
-            className="size-8.5 p-1.5 border border-gray-500 rounded-full"
+            className="h-5 w-5"
             alt="moon icon"
           />
         )}

@@ -58,7 +58,7 @@ const Navbar = ({ theme, setTheme }) => {
                 </a>
             </div>
 
-            <div className="flex items-center gap-2 sm:gap-4">
+            <div className="flex items-center gap-3 sm:gap-4">
                 <ThemeToggleBtn theme={theme} setTheme={setTheme} />
 
                 <img
@@ -69,7 +69,7 @@ const Navbar = ({ theme, setTheme }) => {
                 />
                 <a
                     href="#contact-us"
-                    className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-6 rounded-full cursor-pointer hover:scale-103 transition-all"
+                    className="text-sm max-sm:hidden inline-flex h-11 items-center gap-2 rounded-full bg-primary px-7 text-white cursor-pointer transition-all hover:scale-103"
                 >
                     Connect{" "}
                     <img src={assets.arrow_icon} width={14} alt="connect arrow icon" />
