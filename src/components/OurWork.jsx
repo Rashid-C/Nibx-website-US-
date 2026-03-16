@@ -53,7 +53,8 @@ const OurWork = () => {
                         <img
                             src={work.image}
                             className="w-full rounded-xl"
-                            alt="our-works"
+                            alt={work.title}
+                            loading="lazy"
                         />
                         <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
                         <p className="text-sm opacity-60 w-5/6">{work.description}</p>

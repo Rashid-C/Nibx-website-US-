@@ -27,7 +27,8 @@ const Teams = () => {
                     >
                         <img
                             src={team.image}
-                            alt="team-image"
+                            alt={team.name}
+                            loading="lazy"
                             className="w-12 h-12 rounded-full"
                         />
                         <div className="flex-1">

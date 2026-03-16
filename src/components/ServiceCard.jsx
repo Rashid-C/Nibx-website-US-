@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { motion } from "motion/react";
 
 
@@ -38,4 +38,4 @@ const ServiceCard = ({ service, index }) => {
     )
 }
 
-export default ServiceCard
+export default ServiceCard;

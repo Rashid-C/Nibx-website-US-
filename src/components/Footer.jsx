@@ -1,8 +1,21 @@
-import React from "react";
+import { useState } from "react";
 import assets from "../assets/assets";
 import { motion } from "motion/react";
+import toast from "react-hot-toast";
 
 const Footer = ({ theme }) => {
+    const [email, setEmail] = useState("");
+
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            toast.error("Please enter a valid email address.");
+            return;
+        }
+        toast.success("You're subscribed! Welcome aboard.");
+        setEmail("");
+    };
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -65,16 +78,20 @@ const Footer = ({ theme }) => {
                         The latest news, articles, and resources, sent to your inbox weekly.
                     </p>
 
-                    <div className="flex gap-2 text-sm">
+                    <form onSubmit={handleSubscribe} className="flex gap-2 text-sm" noValidate>
+                        <label htmlFor="newsletter-email" className="sr-only">Email address</label>
                         <input
+                            id="newsletter-email"
                             type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             placeholder="Enter your email"
                             className="w-full p-3 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500"
                         />
-                        <button className="bg-primary text-white rounded px-6">
+                        <button type="submit" className="bg-primary text-white rounded px-6 hover:scale-103 transition-all">
                             Subscribe
                         </button>
-                    </div>
+                    </form>
                 </motion.div>
             </div>
             <hr className="border-gray-300 dark:border-gray-600 my-6" />
@@ -89,10 +106,10 @@ const Footer = ({ theme }) => {
             >
                 <p>Copyright 2026 © NIBX - All Right Reserved.</p>
                 <div className="flex items-center justify-between gap-4">
-                    <img src={assets.facebook_icon} alt="facebook-icon" />
-                    <img src={assets.twitter_icon} alt="twitter-icon" />
-                    <img src={assets.instagram_icon} alt="instagram-icon" />
-                    <img src={assets.linkedin_icon} alt="linkedin-icon" />
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src={assets.facebook_icon} alt="" aria-hidden="true" /></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><img src={assets.twitter_icon} alt="" aria-hidden="true" /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src={assets.instagram_icon} alt="" aria-hidden="true" /></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src={assets.linkedin_icon} alt="" aria-hidden="true" /></a>
                 </div>
             </motion.div>
         </motion.div>

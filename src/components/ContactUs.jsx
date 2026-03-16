@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "./Title";
 import assets from "../assets/assets";
 import toast from "react-hot-toast";
 import { motion } from "motion/react";
 
 const ContactUs = () => {
+    const [loading, setLoading] = useState(false);
+    const [errors, setErrors] = useState({});
+
+    const validate = (formData) => {
+        const errs = {};
+        const name = formData.get("name")?.trim();
+        const email = formData.get("email")?.trim();
+        const message = formData.get("message")?.trim();
+
+        if (!name || name.length < 2) errs.name = "Name must be at least 2 characters.";
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errs.email = "Enter a valid email address.";
+        if (!message || message.length < 10) errs.message = "Message must be at least 10 characters.";
+        return errs;
+    };
+
     const onSubmit = async (event) => {
         event.preventDefault();
 
         const formData = new FormData(event.target);
+        const errs = validate(formData);
+        if (Object.keys(errs).length > 0) {
+            setErrors(errs);
+            return;
+        }
+        setErrors({});
+        setLoading(true);
 
         formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
         try {
@@ -23,10 +45,12 @@ const ContactUs = () => {
                 toast.success("Thank you for your submission!");
                 event.target.reset();
             } else {
-                toast.error(data.message);
+                toast.error(data.message || "Submission failed. Please try again.");
             }
         } catch (error) {
-            toast.error(data.message);
+            toast.error("Something went wrong. Please try again.");
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -50,52 +74,60 @@ const ContactUs = () => {
                 viewport={{ once: false }}
                 onSubmit={onSubmit}
                 className="grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full"
+                noValidate
             >
                 <div>
-                    <p className="mb-2 text-sm font-medium">Your name</p>
-                    <div className="flex pl-3 rounded-lg border border-r-gray-300  dark:border-r-gray-600 ">
-                        <img src={assets.person_icon} alt="person-icon" />
+                    <label htmlFor="contact-name" className="mb-2 text-sm font-medium block">Your name</label>
+                    <div className={`flex pl-3 rounded-lg border ${errors.name ? "border-red-400" : "border-gray-300 dark:border-gray-600"}`}>
+                        <img src={assets.person_icon} alt="" aria-hidden="true" />
                         <input
+                            id="contact-name"
                             type="text"
                             name="name"
                             placeholder="Enter your name"
-                            className="w-full p-3 text-sm outline-none"
-                            required
+                            className="w-full p-3 text-sm outline-none bg-transparent"
+                            aria-describedby={errors.name ? "name-error" : undefined}
                         />
                     </div>
+                    {errors.name && <p id="name-error" className="mt-1 text-xs text-red-400">{errors.name}</p>}
                 </div>
 
                 <div>
-                    <p className="mb-2 text-sm font-medium">Email id</p>
-                    <div className="flex pl-3 rounded-lg border border-r-gray-300  dark:border-r-gray-600 ">
-                        <img src={assets.email_icon} alt="email-icon" />
+                    <label htmlFor="contact-email" className="mb-2 text-sm font-medium block">Email id</label>
+                    <div className={`flex pl-3 rounded-lg border ${errors.email ? "border-red-400" : "border-gray-300 dark:border-gray-600"}`}>
+                        <img src={assets.email_icon} alt="" aria-hidden="true" />
                         <input
+                            id="contact-email"
                             type="email"
                             name="email"
                             placeholder="Enter your email"
-                            className="w-full p-3 text-sm outline-none"
-                            required
+                            className="w-full p-3 text-sm outline-none bg-transparent"
+                            aria-describedby={errors.email ? "email-error" : undefined}
                         />
                     </div>
+                    {errors.email && <p id="email-error" className="mt-1 text-xs text-red-400">{errors.email}</p>}
                 </div>
 
                 <div className="sm:col-span-2">
-                    <p className="mb-2 text-sm font-medium">Message</p>
+                    <label htmlFor="contact-message" className="mb-2 text-sm font-medium block">Message</label>
                     <textarea
+                        id="contact-message"
                         rows={8}
                         name="message"
                         placeholder="Enter your message"
-                        className="w-full p-3 text-sm outline-none rounded-lg border border-gray-300 dark:border-gray-600"
-                        required
+                        className={`w-full p-3 text-sm outline-none rounded-lg border bg-transparent ${errors.message ? "border-red-400" : "border-gray-300 dark:border-gray-600"}`}
+                        aria-describedby={errors.message ? "message-error" : undefined}
                     />
+                    {errors.message && <p id="message-error" className="mt-1 text-xs text-red-400">{errors.message}</p>}
                 </div>
 
                 <button
                     type="submit"
-                    className="w-max flex gap-2 bg-primary text-white text-sm px-10 py-3 rounded-full cursor-pointer hover:scale-103 transition-all "
+                    disabled={loading}
+                    className="w-max flex gap-2 bg-primary text-white text-sm px-10 py-3 rounded-full cursor-pointer hover:scale-103 transition-all disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
                 >
-                    Submit{" "}
-                    <img src={assets.arrow_icon} alt="arrow_icon" className="w-4" />
+                    {loading ? "Sending…" : "Submit"}{" "}
+                    {!loading && <img src={assets.arrow_icon} alt="" aria-hidden="true" className="w-4" />}
                 </button>
             </motion.form>
         </motion.div>

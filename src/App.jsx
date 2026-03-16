@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, Component } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustedBy from "./components/TrustedBy";
@@ -8,6 +8,32 @@ import Teams from "./components/Teams";
 import ContactUs from "./components/ContactUs";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-gray-700 dark:text-white dark:bg-black">
+          <h1 className="text-2xl font-bold">Something went wrong.</h1>
+          <button
+            onClick={() => this.setState({ hasError: false })}
+            className="bg-primary text-white px-6 py-2 rounded-full text-sm hover:scale-103 transition-all"
+          >
+            Try again
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -46,6 +72,7 @@ const App = () => {
     }
   }, []);
   return (
+    <ErrorBoundary>
     <div className="dark:bg-black relative">
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
@@ -70,6 +97,7 @@ const App = () => {
         className="fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]"
       ></div>
     </div>
+    </ErrorBoundary>
   );
 };
 
