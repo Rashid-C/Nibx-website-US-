@@ -23,7 +23,7 @@ const ThemeToggleBtn = ({ theme, setTheme }) => {
       <button
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-500"
+        className="btn-icon"
       >
         {theme === "dark" ? (
           <img

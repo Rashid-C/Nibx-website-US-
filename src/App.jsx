@@ -36,7 +36,7 @@ class ErrorBoundary extends Component {
           <h1 className="text-2xl font-bold">Something went wrong.</h1>
           <button
             onClick={() => this.setState({ hasError: false })}
-            className="bg-primary text-white px-6 py-2 rounded-full text-sm hover:scale-103 transition-all"
+            className="btn-primary"
           >
             Try again
           </button>
@@ -64,6 +64,7 @@ const App = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
   );
+  const [menuCursorActive, setMenuCursorActive] = useState(false);
 
   const dotRef     = useRef(null);
   const outlineRef = useRef(null);
@@ -75,7 +76,17 @@ const App = () => {
       mouse.current.x = e.clientX;
       mouse.current.y = e.clientY;
     };
+    const handleCursorTarget = (e) => {
+      const hoveredMenuItem = e.target instanceof Element
+        && e.target.closest("[data-mobile-menu-item='true']")
+        && document.body.classList.contains("mobile-menu-open");
+
+      setMenuCursorActive(Boolean(hoveredMenuItem));
+    };
+
     document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseover", handleCursorTarget);
+    document.addEventListener("focusin", handleCursorTarget);
 
     const animate = () => {
       position.current.x += (mouse.current.x - position.current.x) * 0.1;
@@ -88,7 +99,11 @@ const App = () => {
     };
     animate();
 
-    return () => document.removeEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseover", handleCursorTarget);
+      document.removeEventListener("focusin", handleCursorTarget);
+    };
   }, []);
 
   return (
@@ -105,9 +120,20 @@ const App = () => {
         </Routes>
 
         {/* custom cursor ring */}
-        <div ref={outlineRef} className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]" style={{ transition: "transform 0.1s ease-out" }} />
+        <div
+          ref={outlineRef}
+          className={`fixed top-0 left-0 h-10 w-10 rounded-full pointer-events-none z-[9999] transition-colors duration-200 ${
+            menuCursorActive ? "border border-white/95 shadow-[0_0_26px_rgba(255,255,255,0.35)]" : "border border-primary"
+          }`}
+          style={{ transition: "transform 0.1s ease-out, border-color 0.2s ease-out, box-shadow 0.2s ease-out" }}
+        />
         {/* custom cursor dot */}
-        <div ref={dotRef}     className="fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]" />
+        <div
+          ref={dotRef}
+          className={`fixed top-0 left-0 h-3 w-3 rounded-full pointer-events-none z-[9999] transition-colors duration-200 ${
+            menuCursorActive ? "bg-white" : "bg-primary"
+          }`}
+        />
       </div>
     </ErrorBoundary>
   );

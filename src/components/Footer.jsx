@@ -23,10 +23,10 @@ const Footer = ({ theme }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
-            className="bg-slate-50 dark:bg-gray-900 pt-10 mt-20 sm:mt-40 px-4 sm:px-10 lg:px-24 xl:px-40"
+            className="bg-slate-50 dark:bg-gray-900 pt-8 mt-16 sm:mt-28 px-4 sm:px-10 lg:px-24 xl:px-40"
         >
             {/* footer top */}
-            <div className="flex justify-between lg:items-start max-lg:flex-col gap-10">
+            <div className="flex justify-between lg:items-start max-lg:flex-col gap-8">
 
                 {/* left — brand + nav */}
                 <motion.div
@@ -34,7 +34,7 @@ const Footer = ({ theme }) => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                     viewport={{ once: false }}
-                    className="space-y-5 text-sm text-gray-700 dark:text-gray-400"
+                    className="space-y-4 text-sm text-gray-700 dark:text-gray-400"
                 >
                     <Link to="/">
                         <img
@@ -63,7 +63,7 @@ const Footer = ({ theme }) => {
                     </div>
 
                     {/* nav links */}
-                    <ul className="flex flex-wrap gap-6">
+                    <ul className="flex flex-wrap gap-x-6 gap-y-3">
                         <li><Link className="hover:text-primary transition-colors" to="/">Home</Link></li>
                         <li><Link className="hover:text-primary transition-colors" to="/products">Products</Link></li>
                         <li><a className="hover:text-primary transition-colors" href="/#about">About</a></li>
@@ -86,10 +86,10 @@ const Footer = ({ theme }) => {
                     className="text-gray-600 dark:text-gray-400 max-w-sm w-full"
                 >
                     <h3 className="font-semibold text-gray-700 dark:text-gray-300">Subscribe to our newsletter</h3>
-                    <p className="text-sm mt-2 mb-6">
+                    <p className="text-sm mt-2 mb-4">
                         Stock updates, bulk deals and new arrivals — sent to your inbox weekly.
                     </p>
-                    <form onSubmit={handleSubscribe} className="flex gap-2 text-sm" noValidate>
+                    <form onSubmit={handleSubscribe} className="flex gap-3 text-sm" noValidate>
                         <label htmlFor="newsletter-email" className="sr-only">Email address</label>
                         <input
                             id="newsletter-email"
@@ -97,16 +97,16 @@ const Footer = ({ theme }) => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Enter your email"
-                            className="w-full p-3 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500"
+                            className="w-full px-3 py-2.5 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500"
                         />
-                        <button type="submit" className="bg-primary text-white rounded px-6 hover:scale-103 transition-all whitespace-nowrap">
+                        <button type="submit" className="btn-primary whitespace-nowrap px-5">
                             Subscribe
                         </button>
                     </form>
                 </motion.div>
             </div>
 
-            <hr className="border-gray-300 dark:border-gray-600 my-6" />
+            <hr className="border-gray-300 dark:border-gray-600 my-5" />
 
             {/* footer bottom */}
             <motion.div
@@ -114,7 +114,7 @@ const Footer = ({ theme }) => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: false }}
-                className="pb-6 text-sm text-gray-500 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-3 flex-wrap"
+                className="pb-5 text-sm text-gray-500 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2.5 flex-wrap"
             >
                 <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-3 text-center sm:text-left">
                     <p>Copyright 2026 &copy; NIBX. All rights reserved.</p>

@@ -82,7 +82,7 @@ const Products = () => {
                     initial={{ opacity: 0, y: 14 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.45 }}
-                    className="flex flex-wrap items-center justify-center gap-2.5"
+                    className="flex flex-wrap items-center justify-center gap-3"
                 >
                     {[
                         { icon: "🇺🇸", text: "US Operations" },
@@ -95,7 +95,7 @@ const Products = () => {
                         </span>
                     ))}
                     <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs px-3 py-1.5 rounded-full border border-primary/50 text-primary font-semibold hover:bg-primary hover:text-white transition-all duration-200">
+                        className="btn-secondary min-h-9 px-4 text-xs">
                         azcstore.com ↗
                     </a>
                 </motion.div>
@@ -106,16 +106,16 @@ const Products = () => {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="flex flex-wrap gap-2 justify-center px-4 sm:px-12 lg:px-24 xl:px-40 pb-10"
+                className="flex flex-wrap gap-3 justify-center px-4 sm:px-12 lg:px-24 xl:px-40 pb-10"
             >
                 {categoryList.map((label) => (
                     <button
                         key={label}
                         onClick={() => selectCategory(label)}
-                        className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 ${
+                        className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
                             activeCategory === label
-                                ? "bg-primary text-white shadow-lg shadow-primary/25"
-                                : "border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-primary hover:text-primary bg-white dark:bg-gray-900"
+                                ? "btn-primary"
+                                : "btn-secondary"
                         }`}
                     >
                         {catIcons[label]} {label}
@@ -234,20 +234,20 @@ const Products = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.25 }}
-                        className="flex items-center justify-center gap-2 mt-12"
+                        className="flex items-center justify-center gap-3 mt-12"
                     >
                         <button onClick={() => goTo(page - 1)} disabled={page === 0} aria-label="Previous page"
-                            className="h-9 w-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-primary hover:text-primary disabled:opacity-30 disabled:cursor-not-allowed transition-all hover:scale-105">
+                            className="btn-icon disabled:opacity-30 disabled:cursor-not-allowed">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                         </button>
                         {Array.from({ length: totalPages }).map((_, i) => (
                             <button key={i} onClick={() => goTo(i)} aria-label={`Page ${i + 1}`} aria-current={page === i ? "page" : undefined}
-                                className={`h-9 w-9 rounded-full text-sm font-semibold transition-all hover:scale-105 ${page === i ? "bg-primary text-white shadow-md shadow-primary/25" : "border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-primary hover:text-primary"}`}>
+                                className={`${page === i ? "btn-primary !h-11 !w-11 !px-0" : "btn-icon"} text-sm font-semibold`}>
                                 {i + 1}
                             </button>
                         ))}
                         <button onClick={() => goTo(page + 1)} disabled={page === totalPages - 1} aria-label="Next page"
-                            className="h-9 w-9 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-primary hover:text-primary disabled:opacity-30 disabled:cursor-not-allowed transition-all hover:scale-105">
+                            className="btn-icon disabled:opacity-30 disabled:cursor-not-allowed">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                         </button>
                     </motion.div>
@@ -279,14 +279,14 @@ const Products = () => {
                         <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline underline-offset-2">AZC Electronics</a>{" "}in the UAE.
                     </motion.p>
                     <motion.div initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }}
-                        className="flex flex-wrap items-center justify-center gap-3">
+                        className="flex flex-wrap items-center justify-center gap-4">
                         <a href="/#contact-us"
-                            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full text-sm font-semibold hover:scale-103 transition-all shadow-lg shadow-primary/25">
+                            className="btn-primary px-8">
                             Get a Bulk Quote
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
                         <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 border border-gray-300 dark:border-gray-600 px-8 py-3 rounded-full text-sm font-semibold hover:border-primary hover:text-primary transition-all hover:scale-103">
+                            className="btn-secondary px-8">
                             Visit AZC Store ↗
                         </a>
                     </motion.div>

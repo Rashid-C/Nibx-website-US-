@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="78" viewBox="0 0 250 78" role="img" aria-labelledby="canonTitle">
+  <title id="canonTitle">Canon</title>
+  <text
+    x="125"
+    y="56"
+    fill="#cf102d"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="60"
+    font-weight="700"
+    font-style="normal"
+    text-anchor="middle"
+    transform="scale(1.03 1)"
+  >
+    Canon
+  </text>
+</svg>

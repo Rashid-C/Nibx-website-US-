@@ -59,18 +59,18 @@ const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1 }}
         viewport={{ once: true }}
-        className="flex flex-wrap items-center justify-center gap-3"
+        className="flex flex-wrap items-center justify-center gap-4 pt-1"
       >
         <button
           onClick={() => navigate("/products")}
-          className="inline-flex h-11 items-center gap-2 rounded-full bg-primary px-7 text-white text-sm cursor-pointer transition-all hover:scale-103 hover:shadow-lg hover:shadow-primary/30"
+          className="btn-primary"
         >
           Browse Products
           <img src={assets.arrow_icon} width={14} alt="" aria-hidden="true" />
         </button>
         <button
           onClick={() => document.querySelector("#contact-us")?.scrollIntoView({ behavior: "smooth" })}
-          className="inline-flex h-11 items-center gap-2 rounded-full border border-gray-300 dark:border-gray-600 px-7 text-sm cursor-pointer transition-all hover:scale-103 hover:border-primary hover:text-primary dark:hover:text-primary"
+          className="btn-secondary"
         >
           Request a Quote
         </button>

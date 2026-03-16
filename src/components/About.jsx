@@ -18,10 +18,10 @@ const About = () => {
             <svg className="absolute inset-0 w-full h-full -z-10 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <pattern id="ab-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-                        <circle cx="1.2" cy="1.2" r="1" fill="currentColor" opacity=".035"/>
+                        <circle cx="1.2" cy="1.2" r="1" fill="currentColor" opacity=".035" />
                     </pattern>
                 </defs>
-                <rect width="100%" height="100%" fill="url(#ab-dots)" className="text-primary"/>
+                <rect width="100%" height="100%" fill="url(#ab-dots)" className="text-primary" />
             </svg>
 
             {/* ── section header ───────────────────────── */}
@@ -33,7 +33,7 @@ const About = () => {
                     viewport={{ once: false }}
                     className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary bg-primary/8 dark:bg-primary/15 border border-primary/20 px-4 py-2 rounded-full mb-5"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
                     About NIBX L.L.C.
                 </motion.div>
 
@@ -81,9 +81,9 @@ const About = () => {
                     <div className="flex items-center gap-3 mb-8 relative z-10">
                         <div className="w-11 h-11 rounded-2xl bg-linear-to-br from-primary to-[#4d8cea] flex items-center justify-center shadow-lg shadow-primary/30 shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/>
-                                <line x1="12" y1="22" x2="12" y2="15.5"/>
-                                <polyline points="22 8.5 12 15.5 2 8.5"/>
+                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5" />
+                                <line x1="12" y1="22" x2="12" y2="15.5" />
+                                <polyline points="22 8.5 12 15.5 2 8.5" />
                             </svg>
                         </div>
                         <div className="flex-1 min-w-0">
@@ -122,7 +122,7 @@ const About = () => {
                     <div className="flex items-start gap-4 relative z-10 mb-5">
                         <div className="w-9 h-9 rounded-xl bg-gray-100 dark:bg-white/[0.06] flex items-center justify-center shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
                             </svg>
                         </div>
                         <div>
@@ -139,8 +139,8 @@ const About = () => {
                         <div className="flex items-center gap-3 mb-3">
                             <div className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                                    <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                    <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                                 </svg>
                             </div>
                             <p className="font-bold text-sm text-gray-800 dark:text-white">AZC Electronics Trading LLC</p>
@@ -149,12 +149,12 @@ const About = () => {
                             <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1 text-xs font-semibold text-primary border border-primary/30 bg-white/60 dark:bg-white/6 hover:bg-primary hover:text-white hover:border-primary px-3 py-1.5 rounded-full transition-all duration-200">
                                 azcstore.com
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10" /></svg>
                             </a>
                             <a href="https://www.azcstore.info/" target="_blank" rel="noopener noreferrer"
                                 className="inline-flex items-center gap-1 text-xs font-semibold text-primary border border-primary/30 bg-white/60 dark:bg-white/6 hover:bg-primary hover:text-white hover:border-primary px-3 py-1.5 rounded-full transition-all duration-200">
                                 azcstore.info
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10" /></svg>
                             </a>
                         </div>
                     </div>
@@ -181,10 +181,10 @@ const About = () => {
                         <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 relative z-10">Climate-controlled · 24/7 monitored</p>
                         <div className="mt-5 pt-4 border-t border-gray-100 dark:border-white/6 relative z-10">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="text-primary/40">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                <polyline points="9 22 9 12 15 12 15 22"/>
-                                <line x1="3" y1="14" x2="7" y2="14"/>
-                                <line x1="17" y1="14" x2="21" y2="14"/>
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                                <line x1="3" y1="14" x2="7" y2="14" />
+                                <line x1="17" y1="14" x2="21" y2="14" />
                             </svg>
                         </div>
                     </motion.div>
@@ -230,8 +230,8 @@ const About = () => {
                         <div className="flex items-center gap-4">
                             <div className="flex-1">
                                 <div className="flex items-center gap-2 mb-1">
-                                    <span className="w-5 h-3.5 inline-block rounded-sm overflow-hidden shrink-0" style={{background:"linear-gradient(180deg,#B22234 33%,#fff 33%,#fff 66%,#3C3B6E 66%)"}}>
-                                        <span className="block w-full h-full" style={{background:"repeating-linear-gradient(180deg,#B22234 0,#B22234 14%,#fff 14%,#fff 28%,#B22234 28%)"}}/></span>
+                                    <span className="w-5 h-3.5 inline-block rounded-sm overflow-hidden shrink-0" style={{ background: "linear-gradient(180deg,#B22234 33%,#fff 33%,#fff 66%,#3C3B6E 66%)" }}>
+                                        <span className="block w-full h-full" style={{ background: "repeating-linear-gradient(180deg,#B22234 0,#B22234 14%,#fff 14%,#fff 28%,#B22234 28%)" }} /></span>
                                     <p className="text-xs font-bold text-gray-800 dark:text-white">United States</p>
                                 </div>
                                 <p className="text-[10px] text-gray-400 dark:text-gray-500">All 50 states · Miami HQ</p>
@@ -239,7 +239,7 @@ const About = () => {
                             <div className="w-px h-8 bg-gray-200 dark:bg-white/10 shrink-0" />
                             <div className="flex-1">
                                 <div className="flex items-center gap-2 mb-1">
-                                    <span className="w-5 h-3.5 inline-block rounded-sm shrink-0 bg-linear-to-r from-[#00732F] via-white to-black"/>
+                                    <span className="w-5 h-3.5 inline-block rounded-sm shrink-0 bg-linear-to-r from-[#00732F] via-white to-black" />
                                     <p className="text-xs font-bold text-gray-800 dark:text-white">UAE / GCC</p>
                                 </div>
                                 <p className="text-[10px] text-gray-400 dark:text-gray-500">Via AZC Electronics LLC</p>
@@ -257,7 +257,7 @@ const About = () => {
                         <a href="#contact-us"
                             className="w-full flex items-center justify-center gap-2 bg-primary text-white rounded-2xl py-4 text-sm font-semibold hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.02] transition-all duration-300">
                             Request a Bulk Quote
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                         </a>
                     </motion.div>
                 </div>
@@ -275,10 +275,10 @@ const About = () => {
                     {
                         icon: (
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                <polyline points="9 22 9 12 15 12 15 22"/>
-                                <line x1="3" y1="14" x2="7" y2="14"/>
-                                <line x1="17" y1="14" x2="21" y2="14"/>
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                                <line x1="3" y1="14" x2="7" y2="14" />
+                                <line x1="17" y1="14" x2="21" y2="14" />
                             </svg>
                         ),
                         label: "Warehousing",
@@ -290,8 +290,8 @@ const About = () => {
                     {
                         icon: (
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                <polyline points="9 12 11 14 15 10"/>
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <polyline points="9 12 11 14 15 10" />
                             </svg>
                         ),
                         label: "Quality Assurance",
@@ -303,10 +303,10 @@ const About = () => {
                     {
                         icon: (
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                                <rect x="1" y="3" width="15" height="13" rx="1"/>
-                                <path d="M16 8h4l3 3v5h-7V8z"/>
-                                <circle cx="5.5" cy="18.5" r="2.5"/>
-                                <circle cx="18.5" cy="18.5" r="2.5"/>
+                                <rect x="1" y="3" width="15" height="13" rx="1" />
+                                <path d="M16 8h4l3 3v5h-7V8z" />
+                                <circle cx="5.5" cy="18.5" r="2.5" />
+                                <circle cx="18.5" cy="18.5" r="2.5" />
                             </svg>
                         ),
                         label: "Distribution",

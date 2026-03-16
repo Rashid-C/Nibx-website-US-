@@ -26,7 +26,7 @@ const ProductDetail = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-30"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 <p className="text-lg font-semibold">Product not found.</p>
                 <button onClick={() => navigate("/products")}
-                    className="text-sm text-primary font-semibold hover:underline underline-offset-2">
+                    className="btn-secondary">
                     ← Back to Products
                 </button>
             </div>
@@ -166,14 +166,14 @@ const ProductDetail = () => {
                         )}
 
                         {/* CTA buttons */}
-                        <div className="flex flex-wrap gap-3 pt-1">
+                        <div className="flex flex-wrap gap-4 pt-2">
                             <a href="/#contact-us"
-                                className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full text-sm font-semibold hover:scale-105 hover:shadow-lg hover:shadow-primary/25 transition-all duration-200">
+                                className="btn-primary">
                                 I am Interested
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </a>
                             <a href="/#contact-us"
-                                className="inline-flex items-center gap-2 border border-primary text-primary px-7 py-3 rounded-full text-sm font-semibold hover:bg-primary hover:text-white hover:scale-105 transition-all duration-200">
+                                className="btn-secondary">
                                 Request Bulk Quote
                             </a>
                         </div>
@@ -205,7 +205,7 @@ const ProductDetail = () => {
                             <h2 className="text-xl font-bold">Related Products</h2>
                         </div>
                         <button onClick={() => navigate("/products")}
-                            className="text-xs text-primary font-semibold hover:underline underline-offset-2 inline-flex items-center gap-1">
+                            className="btn-secondary min-h-10 px-5 text-xs">
                             View All
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </button>

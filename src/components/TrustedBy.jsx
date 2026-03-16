@@ -1,8 +1,6 @@
 import { company_logos } from "../assets/assets";
 import { motion } from "motion/react";
 
-const brands = ["Dell", "HP", "Lenovo", "Samsung", "Asus", "Canon", "Epson"];
-
 const TrustedBy = () => {
     return (
         <motion.div
@@ -36,23 +34,10 @@ const TrustedBy = () => {
                         transition={{ duration: 0.45, ease: "easeOut" }}
                         whileHover={{ scale: 1.1 }}
                         key={index}
-                        src={logo}
-                        alt="brand logo"
-                        className="max-h-5 sm:max-h-7 object-contain dark:drop-shadow-xl dark:brightness-0 dark:invert opacity-60 hover:opacity-100 transition-all duration-300"
+                        src={logo.src}
+                        alt={`${logo.name} logo`}
+                        className="h-8 sm:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-300"
                     />
-                ))}
-
-                {/* text brand names */}
-                {brands.map((brand, index) => (
-                    <motion.span
-                        variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0 } }}
-                        transition={{ duration: 0.45, ease: "easeOut" }}
-                        whileHover={{ scale: 1.08 }}
-                        key={`brand-${index}`}
-                        className="text-sm font-bold tracking-widest text-gray-300 dark:text-gray-600 hover:text-primary dark:hover:text-primary transition-colors duration-300 uppercase"
-                    >
-                        {brand}
-                    </motion.span>
                 ))}
             </motion.div>
 

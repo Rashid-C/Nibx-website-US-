@@ -73,7 +73,7 @@ const ContactUs = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: false }}
                 onSubmit={onSubmit}
-                className="grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full"
+                className="grid sm:grid-cols-2 gap-4 sm:gap-5 max-w-2xl w-full"
                 noValidate
             >
                 <div>
@@ -124,7 +124,7 @@ const ContactUs = () => {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-max flex gap-2 bg-primary text-white text-sm px-10 py-3 rounded-full cursor-pointer hover:scale-103 transition-all disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
+                    className="btn-primary w-max px-10"
                 >
                     {loading ? "Sending…" : "Submit"}{" "}
                     {!loading && <img src={assets.arrow_icon} alt="" aria-hidden="true" className="w-4" />}

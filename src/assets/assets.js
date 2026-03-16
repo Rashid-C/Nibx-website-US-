@@ -8,6 +8,13 @@ import microsoft_logo from './microsoft_logo.png'
 import zoom_logo from './zoom_logo.png'
 import rakuten_logo from './rakuten_logo.png'
 import coinbase_logo from './coinbase_logo.png'
+import dell_logo from './dell.avif'
+import hp_logo from './hp.svg'
+import lenovo_logo from './lenovo.svg'
+import samsung_logo from './samsung.svg'
+import asus_logo from './asus.svg'
+import canon_logo from './canon.svg'
+import epson_logo from './epson.svg'
 import ads_icon from './ads_icon.svg'
 import content_icon from './content_icon.svg'
 import marketing_icon from './marketing_icon.svg'
@@ -33,12 +40,13 @@ import rashid_c from './rashid_c.png'
 
 
 export const company_logos = [
-  microsoft_logo,
-  zoom_logo,
-  rakuten_logo,
-  coinbase_logo,
-  airbnb_logo,
-  google_logo,
+  { name: 'Dell', src: dell_logo },
+  { name: 'HP', src: hp_logo },
+  { name: 'Lenovo', src: lenovo_logo },
+  { name: 'Samsung', src: samsung_logo },
+  { name: 'Asus', src: asus_logo },
+  { name: 'Canon', src: canon_logo },
+  { name: 'Epson', src: epson_logo },
 ]
 
 const assets = {
