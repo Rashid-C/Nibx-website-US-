@@ -9,7 +9,7 @@ const ContactUs = () => {
 
         const formData = new FormData(event.target);
 
-        formData.append("access_key", import.meta.env.YOUR_ACCESS_KEY_HERE);
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
         try {
             const response = await fetch(import.meta.env.VITE_WEB3FORM_API, {
                 method: "POST",
