@@ -47,7 +47,7 @@ class ErrorBoundary extends Component {
   }
 }
 
-const HomePage = ({ theme }) => (
+const HomePage = () => (
   <>
     <Hero />
     <TrustedBy />
@@ -56,7 +56,7 @@ const HomePage = ({ theme }) => (
     <OurWork />
     <Teams />
     <ContactUs />
-    <Footer theme={theme} />
+    <Footer />
   </>
 );
 
@@ -114,7 +114,7 @@ const App = () => {
         <Navbar theme={theme} setTheme={setTheme} />
 
         <Routes>
-          <Route path="/"             element={<HomePage theme={theme} />} />
+          <Route path="/"             element={<HomePage />} />
           <Route path="/products"     element={<><Products /><Footer theme={theme} /></>} />
           <Route path="/products/:id" element={<><ProductDetail /><Footer theme={theme} /></>} />
         </Routes>
