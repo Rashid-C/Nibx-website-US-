@@ -13,20 +13,6 @@ export const Icon = {
     ),
 };
 
-/* ── product images (Unsplash) ── */
-const IMG = {
-    hp_flip:    "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80",
-    hp_silver:  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=800&q=80",
-    hp_blue:    "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80",
-    hp_premium: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80",
-    hp_gaming:  "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
-    hp_14:      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=800&q=80",
-    hp_budget:  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-    asus_tuf:   "https://images.unsplash.com/photo-1612387290123-e663e41b4d4c?auto=format&fit=crop&w=800&q=80",
-    asus_vivo:  "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
-    dell:       "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80",
-};
-
 /* ── category meta ── */
 export const catMeta = {
     HP:   { gradient: "from-blue-600/8 to-sky-400/8 dark:from-blue-600/15 dark:to-sky-400/15",       color: "text-blue-600 dark:text-sky-400" },
@@ -165,7 +151,7 @@ export const products = [
         spec: "Intel i5-1135g7 | 8GB RAM | 256GB SSD | Win 11 | 14\"",
         specs: { Processor:"Intel Core i5-1135g7", RAM:"8GB DDR4", Storage:"256GB SSD", OS:"Windows 11", Display:"14\" FHD", Battery:"Up to 9 hrs", Condition:"New", Warranty:"1 year" },
         description: "HP 14-Dq2078wm brings i5-1135g7 performance to a compact 14\" form factor. Lightweight and capable for mobile professionals and business travelers.",
-        grade: "Grade A+", tag: "", image: IMG.hp_14, icon: Icon.laptop,
+        grade: "Grade A+", tag: "", image: ["/public/products/b1..jpg","/public/products/b2.jpg"], icon: Icon.laptop,
     },
     {
         id: 17, category: "HP", name: "HP Laptop 15-Dy2131wm",
@@ -173,7 +159,7 @@ export const products = [
         spec: "Intel i3-1115g4 | 8GB RAM | 256GB SSD | Win 10 | 15.6\"",
         specs: { Processor:"Intel Core i3-1115g4", RAM:"8GB DDR4", Storage:"256GB SSD", OS:"Windows 10", Display:"15.6\" HD", Battery:"Up to 7 hrs", Condition:"New", Warranty:"1 year" },
         description: "HP 15-Dy2131wm with i3-1115g4 and 8GB RAM — reliable budget option for bulk corporate or educational deployments. Ships with Windows 10 for compatibility.",
-        grade: "Grade B", tag: "Bulk Deal", image: IMG.hp_silver, icon: Icon.laptop,
+        grade: "Grade B", tag: "Bulk Deal", image: ["/public/products/dy1.jpg","/public/products/dy2.jpg"], icon: Icon.laptop,
     },
     {
         id: 18, category: "HP", name: "HP Laptop 14-Dq2032wm",
@@ -181,7 +167,7 @@ export const products = [
         spec: "Intel i3-1115g4 | 4GB RAM | 128GB SSD | Win 11 | 14\" TS",
         specs: { Processor:"Intel Core i3-1115g4", RAM:"4GB DDR4", Storage:"128GB SSD", OS:"Windows 11", Display:"14\" Touchscreen", Battery:"Up to 7 hrs", Condition:"New", Warranty:"1 year" },
         description: "HP 14-Dq2032wm — 14\" touchscreen i3 for educational apps and light business use. An excellent entry point for touch-first deployments.",
-        grade: "Grade A+", tag: "", image: IMG.hp_14, icon: Icon.laptop,
+        grade: "Grade A+", tag: "", image: ["/products/c1.jpg"], icon: Icon.laptop,
     },
     {
         id: 19, category: "ASUS", name: "ASUS TUF Gaming A16 (FA607NUG)",
@@ -189,7 +175,7 @@ export const products = [
         spec: "Ryzen 7-7445hs | 16GB RAM | 512GB SSD | 16GB GPU | 16\"",
         specs: { Processor:"AMD Ryzen 7 7445hs", RAM:"16GB DDR5", Storage:"512GB SSD", GPU:"NVIDIA RTX 4060 16GB", OS:"Windows 11", Display:"16\" FHD 165Hz", Condition:"New", Warranty:"1 year" },
         description: "ASUS TUF Gaming A16 — Ryzen 7-7445hs with 16GB NVIDIA GPU for gaming, 3D rendering and AI workloads. MIL-STD-810H certified tough build.",
-        grade: "Grade A+", tag: "New Arrival", image: IMG.asus_tuf, icon: Icon.laptop,
+        grade: "Grade A+", tag: "New Arrival", image:["/public/products/tu1.jpg","/public/products/tu2.jpg"], icon: Icon.laptop,
     },
     {
         id: 20, category: "HP", name: "HP Laptop 15-Fd0183wm",
@@ -197,7 +183,7 @@ export const products = [
         spec: "Intel i7-1355u | 16GB RAM | 1TB SSD | Win 11 | 15.6\"",
         specs: { Processor:"Intel Core i7-1355u", RAM:"16GB DDR4", Storage:"1TB SSD", OS:"Windows 11", Display:"15.6\" FHD IPS", Battery:"Up to 9 hrs", Condition:"New", Warranty:"1 year" },
         description: "HP 15-Fd0183wm with Intel i7-1355u, 16GB RAM and 1TB SSD — high-performance for demanding professional workloads. Great for developers, analysts and creators.",
-        grade: "Grade A+", tag: "Best Seller", image: IMG.hp_premium, icon: Icon.laptop,
+        grade: "Grade A+", tag: "Best Seller", image: ["/products/adc.jpg"], icon: Icon.laptop,
     },
     {
         id: 21, category: "HP", name: "HP Laptop 15-Fd0082wm",
@@ -205,7 +191,7 @@ export const products = [
         spec: "Intel N200 | 4GB RAM | 128GB SSD | Win 11 | 15.6\"",
         specs: { Processor:"Intel N200", RAM:"4GB DDR4", Storage:"128GB SSD", OS:"Windows 11", Display:"15.6\" HD", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
         description: "HP 15-Fd0082wm with Intel N200 — the most budget-friendly option for schools, NGOs and basic office setups. Extremely low cost per unit for large deployments.",
-        grade: "Grade B", tag: "Bulk Deal", image: IMG.hp_budget, icon: Icon.laptop,
+        grade: "Grade B", tag: "Bulk Deal", image: ["/public/products/n1.jpg","/public/products/n2.jpg"], icon: Icon.laptop,
     },
     {
         id: 22, category: "ASUS", name: "ASUS Vivobook F1504VAP",
@@ -213,7 +199,7 @@ export const products = [
         spec: "Intel Core5-120u | 16GB RAM | 512GB SSD | Win 11 | 15.6\"",
         specs: { Processor:"Intel Core 5-120u", RAM:"16GB LPDDR5", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD OLED", Battery:"Up to 10 hrs", Condition:"New", Warranty:"1 year" },
         description: "ASUS Vivobook F1504VAP — sleek ultrabook with Intel Core 5-120u, 16GB LPDDR5 and OLED display. Perfect for design professionals and executives.",
-        grade: "Grade A+", tag: "New Arrival", image: IMG.asus_vivo, icon: Icon.laptop,
+        grade: "Grade A+", tag: "New Arrival", image: ["/products/as1.webp","/products/as2.webp","/products/as3.webp"], icon: Icon.laptop,
     },
     {
         id: 23, category: "HP", name: "HP Laptop 15-Fd0152wm",
@@ -221,7 +207,7 @@ export const products = [
         spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\"",
         specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
         description: "HP 15-Fd0152wm with i5-1334u for smooth everyday tasks. A trusted, reliable choice for business deployments, available in large quantities.",
-        grade: "Grade A+", tag: "", image: IMG.hp_silver, icon: Icon.laptop,
+        grade: "Grade A+", tag: "", image: ["/products/tgbrtex.webp"], icon: Icon.laptop,
     },
 ];
 
