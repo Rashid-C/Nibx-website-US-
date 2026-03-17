@@ -155,6 +155,16 @@ const ProductDetail = () => {
                             <p className="text-sm text-gray-500 dark:text-gray-400">{product.tagline}</p>
                         </div>
 
+                        {/* Price */}
+                        {product.price && (
+                            <div className="flex items-end gap-3">
+                                <span className="text-4xl font-black text-gray-900 dark:text-white">
+                                    ${product.price.toLocaleString()}
+                                </span>
+                                <span className="text-sm text-gray-400 dark:text-gray-500 mb-1.5">/ unit · bulk pricing available</span>
+                            </div>
+                        )}
+
                         {/* Description */}
                         <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300 border-l-2 border-primary/30 pl-4">
                             {product.description}
@@ -189,7 +199,7 @@ const ProductDetail = () => {
                                         className="rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden"
                                     >
                                         <div className="divide-y divide-gray-50 dark:divide-gray-800">
-                                            {Object.entries(product.specs).map(([key, val]) => (
+                                            {Object.entries(product.specs).filter(([key]) => key !== "Warranty").map(([key, val]) => (
                                                 <div
                                                     key={key}
                                                     className="flex items-center px-4 py-3 gap-4 hover:bg-gray-50 dark:hover:bg-gray-800/40 transition-colors"
@@ -213,8 +223,7 @@ const ProductDetail = () => {
                                     >
                                         {[
                                             { icon: "🛡️", label: "Condition",      val: "Certified Refurbished" },
-                                            { icon: "✅", label: "Quality Check",  val: "Individually tested by NIBX" },
-                                            { icon: "📋", label: "Warranty",       val: product.specs?.Warranty || "1 year" },
+                                            { icon: "✅", label: "Quality Check",  val: "Tested & certified by the manufacturer" },
                                             { icon: "📦", label: "Bulk Available", val: "Yes — contact us for volume pricing" },
                                             { icon: "🚚", label: "Shipping",       val: "US nationwide · All 50 states, tracked & insured" },
                                         ].map((row) => (

@@ -37,6 +37,7 @@ import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
 import rashid_c from './rashid_c.png'
+import nibalboss from '/products/nibal-boss.jpeg'
 
 
 export const company_logos = [
@@ -81,12 +82,12 @@ const assets = {
 export default assets
 
 export const teamData = [
-  { name: 'Nibal Moidu',  title: 'CEO & Founder',            image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
-  { name: 'Rashid C',     title: 'Software Developer',        image: rashid_c, link: 'https://rashidc.site/' },
-  { name: 'Johar',        title: 'Main Accountant',           image: 'https://randomuser.me/api/portraits/men/32.jpg' },
-  { name: 'Jishan',       title: 'Accountant',                image: 'https://randomuser.me/api/portraits/men/45.jpg' },
-  { name: 'Dinesh',       title: 'Sr. Sales',                 image: 'https://randomuser.me/api/portraits/men/52.jpg' },
-  { name: 'Faisal',       title: 'Jr. Sales',                 image: 'https://randomuser.me/api/portraits/men/61.jpg' },
-  { name: 'Aadhil',       title: 'Coordination Staff',        image: 'https://randomuser.me/api/portraits/men/78.jpg' },
-  { name: 'Rafeeque',     title: 'Team Member',               image: 'https://randomuser.me/api/portraits/men/85.jpg' },
+  { name: 'NIBAL  MOIDU',  title: 'CEO & Founder',            image: nibalboss },
+  { name: 'RASHID C',     title: 'Software Developer',        image: rashid_c, link: 'https://rashidc.site/' },
+  { name: 'QUAID JOHAR',        title: 'Main Accountant',           image: 'https://randomuser.me/api/portraits/men/32.jpg' },
+  { name: 'ZESHAN',       title: 'Manager',                image: 'https://randomuser.me/api/portraits/men/45.jpg' },
+  { name: 'DHANEESH',       title: 'Sr. Sales',                 image: 'https://randomuser.me/api/portraits/men/52.jpg' },
+  { name: 'FAISAL',       title: 'Jr. Sales',                 image: 'https://randomuser.me/api/portraits/men/61.jpg' },
+  { name: 'ADIL',       title: 'Coordination Staff',        image: 'https://randomuser.me/api/portraits/men/78.jpg' },
+  // { name: '',     title: 'Team Member',               image: 'https://randomuser.me/api/portraits/men/85.jpg' },
 ]
