@@ -11,309 +11,218 @@ export const Icon = {
             <rect x="20" y="34" width="16" height="3" rx="1.5" fill="currentColor" fillOpacity=".3"/>
         </svg>
     ),
-    monitor: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="3" width="50" height="34" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="8" y="8" width="40" height="24" rx="1.5" fill="currentColor" fillOpacity=".07" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <line x1="13" y1="14" x2="36" y2="14" stroke="currentColor" strokeOpacity=".5" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="13" y1="19" x2="43" y2="19" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="13" y1="24" x2="28" y2="24" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <path d="M24 37v8" stroke="currentColor" strokeOpacity=".4" strokeWidth="2" strokeLinecap="round"/>
-            <rect x="16" y="45" width="24" height="3" rx="1.5" fill="currentColor" fillOpacity=".3"/>
-            <circle cx="43" cy="30" r="2" fill="currentColor" fillOpacity=".5"/>
-        </svg>
-    ),
-    printer: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="14" width="46" height="22" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="11" y="5" width="34" height="12" rx="2" fill="currentColor" fillOpacity=".07" stroke="currentColor" strokeOpacity=".4" strokeWidth="1.5"/>
-            <rect x="11" y="30" width="34" height="18" rx="2" fill="currentColor" fillOpacity=".07" stroke="currentColor" strokeOpacity=".4" strokeWidth="1.5"/>
-            <line x1="16" y1="37" x2="40" y2="37" stroke="currentColor" strokeOpacity=".5" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="16" y1="42" x2="34" y2="42" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <circle cx="42" cy="23" r="2.5" fill="currentColor" fillOpacity=".5"/>
-            <circle cx="35" cy="23" r="2.5" fill="currentColor" fillOpacity=".3"/>
-        </svg>
-    ),
-    aio: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="3" width="50" height="36" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="8" y="8" width="40" height="26" rx="1.5" fill="currentColor" fillOpacity=".07" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <line x1="13" y1="16" x2="38" y2="16" stroke="currentColor" strokeOpacity=".5" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="13" y1="22" x2="43" y2="22" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="13" y1="28" x2="30" y2="28" stroke="currentColor" strokeOpacity=".3" strokeWidth="1.5" strokeLinecap="round"/>
-            <path d="M28 39v8" stroke="currentColor" strokeOpacity=".4" strokeWidth="2" strokeLinecap="round"/>
-            <rect x="18" y="47" width="20" height="3" rx="1.5" fill="currentColor" fillOpacity=".3"/>
-        </svg>
-    ),
-    tower: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="3" width="30" height="50" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="10" y="8" width="20" height="14" rx="1.5" fill="currentColor" fillOpacity=".07" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <circle cx="20" cy="32" r="7" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" fill="none"/>
-            <circle cx="20" cy="32" r="2.5" fill="currentColor" fillOpacity=".4"/>
-            <circle cx="12" cy="44" r="2" fill="currentColor" fillOpacity=".5"/>
-            <rect x="10" y="47" width="14" height="2.5" rx="1.25" fill="currentColor" fillOpacity=".3"/>
-        </svg>
-    ),
-    ssd: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="6" width="58" height="32" rx="5" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="9" y="12" width="18" height="16" rx="2.5" fill="currentColor" fillOpacity=".07" stroke="currentColor" strokeOpacity=".4" strokeWidth="1.5"/>
-            <line x1="34" y1="16" x2="54" y2="16" stroke="currentColor" strokeOpacity=".5" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="34" y1="21" x2="54" y2="21" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="34" y1="26" x2="47" y2="26" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <rect x="6" y="32" width="5" height="3" rx="1" fill="currentColor" fillOpacity=".3"/>
-            <rect x="13" y="32" width="3" height="3" rx="1" fill="currentColor" fillOpacity=".3"/>
-            <rect x="18" y="32" width="5" height="3" rx="1" fill="currentColor" fillOpacity=".3"/>
-        </svg>
-    ),
-    hdd: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="8" width="58" height="32" rx="5" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <circle cx="26" cy="24" r="11" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" fill="none"/>
-            <circle cx="26" cy="24" r="6" stroke="currentColor" strokeOpacity=".25" strokeWidth="1" fill="none"/>
-            <circle cx="26" cy="24" r="2.5" fill="currentColor" fillOpacity=".45"/>
-            <line x1="44" y1="16" x2="58" y2="16" stroke="currentColor" strokeOpacity=".5" strokeWidth="1.5" strokeLinecap="round"/>
-            <line x1="44" y1="21" x2="58" y2="21" stroke="currentColor" strokeOpacity=".35" strokeWidth="1.5" strokeLinecap="round"/>
-            <circle cx="52" cy="30" r="2.5" fill="currentColor" fillOpacity=".4"/>
-        </svg>
-    ),
-    gpu: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 72 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="10" width="56" height="24" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="8" y="15" width="16" height="14" rx="2" fill="currentColor" fillOpacity=".08" stroke="currentColor" strokeOpacity=".4" strokeWidth="1"/>
-            <rect x="30" y="15" width="8" height="6" rx="1" fill="currentColor" fillOpacity=".1" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <rect x="40" y="15" width="8" height="6" rx="1" fill="currentColor" fillOpacity=".1" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <rect x="30" y="24" width="8" height="6" rx="1" fill="currentColor" fillOpacity=".07"/>
-            <rect x="40" y="24" width="8" height="6" rx="1" fill="currentColor" fillOpacity=".07"/>
-            <rect x="59" y="13" width="10" height="5" rx="2" fill="currentColor" fillOpacity=".15" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <rect x="59" y="22" width="10" height="5" rx="2" fill="currentColor" fillOpacity=".15" stroke="currentColor" strokeOpacity=".3" strokeWidth="1"/>
-            <line x1="3" y1="37" x2="59" y2="37" stroke="currentColor" strokeOpacity=".2" strokeWidth="1.5" strokeDasharray="3 3" strokeLinecap="round"/>
-        </svg>
-    ),
-    ram: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="8" width="56" height="20" rx="2.5" stroke="currentColor" strokeWidth="2" fill="none"/>
-            <rect x="9"  y="13" width="7" height="10" rx="1.5" fill="currentColor" fillOpacity=".2" stroke="currentColor" strokeOpacity=".4" strokeWidth="1"/>
-            <rect x="19" y="13" width="7" height="10" rx="1.5" fill="currentColor" fillOpacity=".2" stroke="currentColor" strokeOpacity=".4" strokeWidth="1"/>
-            <rect x="29" y="13" width="7" height="10" rx="1.5" fill="currentColor" fillOpacity=".2" stroke="currentColor" strokeOpacity=".4" strokeWidth="1"/>
-            <rect x="39" y="13" width="7" height="10" rx="1.5" fill="currentColor" fillOpacity=".2" stroke="currentColor" strokeOpacity=".4" strokeWidth="1"/>
-            <rect x="49" y="13" width="7" height="10" rx="1.5" fill="currentColor" fillOpacity=".2" stroke="currentColor" strokeOpacity=".4" strokeWidth="1"/>
-            <line x1="4" y1="30" x2="60" y2="30" stroke="currentColor" strokeOpacity=".15" strokeWidth="1"/>
-            {[8,16,24,32,40].map(x => <rect key={x} x={x} y="32" width="3" height="3" rx=".5" fill="currentColor" fillOpacity=".25"/>)}
-        </svg>
-    ),
-    headset: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 28C10 17 18 9 28 9C38 9 46 17 46 28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
-            <rect x="5" y="26" width="8" height="14" rx="4" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity=".08"/>
-            <rect x="43" y="26" width="8" height="14" rx="4" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity=".08"/>
-            <path d="M46 37C46 42 44 46 40 47L36 49" stroke="currentColor" strokeOpacity=".4" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-            <rect x="33" y="47" width="10" height="5" rx="2.5" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity=".1"/>
-        </svg>
-    ),
-    keyboard: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 72 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="12" width="52" height="28" rx="3" stroke="currentColor" strokeWidth="2" fill="none"/>
-            {[0,1,2,3,4,5,6].map(i => (
-                <rect key={i} x={7+i*7} y="18" width="5" height="4.5" rx=".8" fill="currentColor" fillOpacity=".15" stroke="currentColor" strokeOpacity=".35" strokeWidth=".8"/>
-            ))}
-            {[0,1,2,3,4,5].map(i => (
-                <rect key={i} x={9+i*7} y="25" width="5" height="4.5" rx=".8" fill="currentColor" fillOpacity=".12" stroke="currentColor" strokeOpacity=".3" strokeWidth=".8"/>
-            ))}
-            <rect x="15" y="32" width="22" height="4.5" rx=".8" fill="currentColor" fillOpacity=".15" stroke="currentColor" strokeOpacity=".35" strokeWidth=".8"/>
-            <circle cx="62" cy="26" r="7" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity=".07"/>
-            <circle cx="62" cy="26" r="2.5" fill="currentColor" fillOpacity=".35"/>
-        </svg>
-    ),
-    hub: (size = 56) => (
-        <svg width={size} height={size} viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6" y="12" width="52" height="20" rx="10" stroke="currentColor" strokeWidth="2" fill="none"/>
-            {[0,1,2,3,4,5,6].map(i => (
-                <rect key={i} x={12+i*7} y="8" width="3.5" height="7" rx=".8" fill="currentColor" fillOpacity=".2" stroke="currentColor" strokeOpacity=".3" strokeWidth=".8"/>
-            ))}
-            <circle cx="14" cy="22" r="2.5" fill="currentColor" fillOpacity=".4"/>
-            <circle cx="22" cy="22" r="2.5" fill="currentColor" fillOpacity=".4"/>
-            <circle cx="30" cy="22" r="2.5" fill="currentColor" fillOpacity=".4"/>
-            <circle cx="38" cy="22" r="2.5" fill="currentColor" fillOpacity=".4"/>
-            <circle cx="46" cy="22" r="2.5" fill="currentColor" fillOpacity=".2"/>
-            <path d="M32 32v8" stroke="currentColor" strokeOpacity=".35" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
-    ),
 };
 
-/* ── category meta ─────────────────────────────────────── */
+/* ── product images (Unsplash) ── */
+const IMG = {
+    hp_flip:    "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80",
+    hp_silver:  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=800&q=80",
+    hp_blue:    "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80",
+    hp_premium: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80",
+    hp_gaming:  "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80",
+    hp_14:      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=800&q=80",
+    hp_budget:  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
+    asus_tuf:   "https://images.unsplash.com/photo-1612387290123-e663e41b4d4c?auto=format&fit=crop&w=800&q=80",
+    asus_vivo:  "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+    dell:       "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80",
+};
+
+/* ── category meta ── */
 export const catMeta = {
-    Laptops:     { gradient: "from-primary/8 to-indigo-500/8 dark:from-primary/15 dark:to-indigo-500/15",   color: "text-primary" },
-    Monitors:    { gradient: "from-indigo-500/8 to-violet-500/8 dark:from-indigo-500/15 dark:to-violet-500/15", color: "text-indigo-600 dark:text-indigo-400" },
-    Printers:    { gradient: "from-blue-500/8 to-cyan-500/8 dark:from-blue-500/15 dark:to-cyan-500/15",     color: "text-blue-600 dark:text-blue-400" },
-    Desktops:    { gradient: "from-primary/8 to-blue-600/8 dark:from-primary/15 dark:to-blue-600/15",       color: "text-primary" },
-    Components:  { gradient: "from-violet-500/8 to-purple-500/8 dark:from-violet-500/15 dark:to-purple-500/15", color: "text-violet-600 dark:text-violet-400" },
-    Accessories: { gradient: "from-blue-500/8 to-teal-500/8 dark:from-blue-500/15 dark:to-teal-500/15",    color: "text-blue-500 dark:text-teal-400" },
+    HP:   { gradient: "from-blue-600/8 to-sky-400/8 dark:from-blue-600/15 dark:to-sky-400/15",       color: "text-blue-600 dark:text-sky-400" },
+    ASUS: { gradient: "from-primary/8 to-violet-500/8 dark:from-primary/15 dark:to-violet-500/15",   color: "text-primary" },
+    Dell: { gradient: "from-indigo-500/8 to-blue-700/8 dark:from-indigo-500/15 dark:to-blue-700/15", color: "text-indigo-600 dark:text-indigo-400" },
 };
 
-/* ── products ──────────────────────────────────────────── */
+/* ── products ── */
 export const products = [
     {
-        id: 1, category: "Laptops", name: "Refurbished Dell Latitude 5520",
-        tagline: "Enterprise reliability at a fraction of the cost.",
-        spec: "Intel Core i5 | 16GB RAM | 512GB SSD | Win 11 Pro",
-        specs: { Processor:"Intel Core i5-1145G7", RAM:"16GB DDR4", Storage:"512GB NVMe SSD", OS:"Windows 11 Pro", Display:'15.6" FHD IPS', Battery:"Up to 8 hrs", Grade:"A — Fully Tested", Warranty:"90 days" },
-        description: "The Dell Latitude 5520 is a business-class laptop built for reliability and performance. Sourced, graded and quality-checked by NIBX before every bulk shipment. Ideal for enterprise deployments, office refreshes and IT programmes across the US.",
-        grade: "Grade A", tag: "Best Seller", icon: Icon.laptop,
+        id: 1, category: "HP", name: "HP OmniBook 7 Flip (16-Au0070wm)",
+        tagline: "Intel Ultra 7 power in a 360° flip convertible.",
+        spec: "Intel Ultra 7 | 16GB RAM | 512GB SSD | Win 11 | 16\" 2-in-1",
+        specs: { Processor:"Intel Ultra 7", RAM:"16GB", Storage:"512GB SSD", OS:"Windows 11", Display:"16\" Touchscreen 2-in-1", Form:"Flip / Convertible", Condition:"Refurbished", Warranty:"90 days" },
+        description: "The HP OmniBook 7 Flip delivers premium performance with Intel Ultra 7 and a versatile 360° touchscreen. Ideal for executives and creatives who need both power and flexibility in bulk deployments.",
+        grade: "Grade A", tag: "New Arrival",
+        image: "/products/Hp2.jpg",
+        images: ["/products/Hp2.jpg", "/products/Hp3.jpg"],
+        icon: Icon.laptop,
     },
     {
-        id: 2, category: "Laptops", name: "HP EliteBook 840 G8",
-        tagline: "Sleek, secure, built for the modern workforce.",
-        spec: "Intel Core i7 | 16GB RAM | 256GB SSD | Win 11 Pro",
-        specs: { Processor:"Intel Core i7-1165G7", RAM:"16GB DDR4", Storage:"256GB NVMe SSD", OS:"Windows 11 Pro", Display:'14" FHD IPS', Battery:"Up to 10 hrs", Grade:"A+ — Like New", Warranty:"90 days" },
-        description: "HP's flagship EliteBook series, known for military-grade durability and enterprise security features. Available in bulk for US businesses — sourced directly and tested to Grade A+ standard.",
-        grade: "Grade A+", tag: "New Arrival", icon: Icon.laptop,
+        id: 2, category: "HP", name: "HP Laptop 15-Fd0154wm",
+        tagline: "Touchscreen productivity, all day long.",
+        spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\" TS",
+        specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD Touchscreen", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0154wm combines Intel i5-1334u performance with a vibrant 15.6\" touchscreen. A top seller for business productivity and student bulk orders.",
+        grade: "Grade A+", tag: "Best Seller", image: ["/products/r1.jpg", "/products/r2.jpg", "/products/r3.jpg"], icon: Icon.laptop,
     },
     {
-        id: 3, category: "Laptops", name: "Lenovo ThinkPad T14 (Refurb)",
-        tagline: "Legendary ThinkPad durability, budget-friendly.",
-        spec: "AMD Ryzen 5 | 8GB RAM | 512GB SSD | Win 10 Pro",
-        specs: { Processor:"AMD Ryzen 5 PRO 4650U", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 10 Pro", Display:'14" FHD IPS', Battery:"Up to 9 hrs", Grade:"B — Minor cosmetic wear", Warranty:"60 days" },
-        description: "Lenovo ThinkPad T14 refurbished to Grade B standard — minor cosmetic wear, fully functional. Perfect for high-volume budget-conscious deployments without compromising on performance.",
-        grade: "Grade B", tag: "Bulk Deal", icon: Icon.laptop,
+        id: 3, category: "HP", name: "HP Laptop 15-Fd0153wm",
+        tagline: "Reliable i5 performance for everyday workloads.",
+        spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\"",
+        specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD IPS", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0153wm delivers solid i5-1334u performance for office work, web browsing and media. A dependable choice for large-scale corporate deployments.",
+        grade: "Grade A+", tag: "", image: ["/products/h1.jpg"], icon: Icon.laptop,
     },
     {
-        id: 4, category: "Laptops", name: 'MacBook Pro 13" M1 (Refurb)',
-        tagline: "Apple silicon power, refurbished to perfection.",
-        spec: "Apple M1 | 8GB RAM | 256GB SSD | macOS",
-        specs: { Processor:"Apple M1 (8-core)", RAM:"8GB Unified Memory", Storage:"256GB SSD", OS:"macOS Ventura", Display:'13.3" Retina', Battery:"Up to 17 hrs", Grade:"A — Fully Tested", Warranty:"90 days" },
-        description: "Refurbished MacBook Pro 13-inch with Apple M1 chip. Tested and certified to Grade A. Available in limited bulk quantities — ideal for creative teams and developers.",
-        grade: "Grade A", tag: "", icon: Icon.laptop,
+        id: 4, category: "HP", name: "HP Laptop 15-Fd0259wm",
+        tagline: "Bulk-ready i5 power at competitive pricing.",
+        spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\"",
+        specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0259wm — consistent i5-1334u specs, ideal for large volume orders requiring uniform performance across every unit.",
+        grade: "Grade A+", tag: "Bulk Deal", image: ["/products/h2.webp"], icon: Icon.laptop,
     },
     {
-        id: 5, category: "Monitors", name: 'Dell UltraSharp 24" FHD',
-        tagline: "Precision colour. Built for the professional desk.",
-        spec: "1920×1080 | IPS | 60Hz | HDMI + DisplayPort",
-        specs: { Resolution:"1920×1080 FHD", Panel:"IPS Anti-glare", RefreshRate:"60Hz", Connectivity:"HDMI, DisplayPort, USB 3.0 Hub", ResponseTime:"5ms GtG", Brightness:"350 cd/m²", Size:'24"', Warranty:"1 year" },
-        description: "Dell UltraSharp 24-inch FHD monitor with IPS panel for accurate colour reproduction. A staple for enterprise and office deployments across the US. Available in large quantities.",
-        grade: "", tag: "Best Seller", icon: Icon.monitor,
+        id: 5, category: "HP", name: "HP Laptop 15-Fd0250wm",
+        tagline: "Refurbished i5 value — tested and certified.",
+        spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\" Ref",
+        specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD", Battery:"Up to 8 hrs", Condition:"Refurbished", Warranty:"90 days" },
+        description: "Refurbished HP 15-Fd0250wm — same strong i5-1334u specs at a lower price. NIBX-graded Grade A, fully tested and ready for deployment.",
+        grade: "Grade A", tag: "Bulk Deal", image: ["/products/h3.png"], icon: Icon.laptop,
     },
     {
-        id: 6, category: "Monitors", name: 'HP 27" 4K UHD Display',
-        tagline: "Stunning 4K clarity for demanding workloads.",
-        spec: "3840×2160 | IPS | USB-C | Anti-glare",
-        specs: { Resolution:"3840×2160 4K UHD", Panel:"IPS Anti-glare", Connectivity:"USB-C 65W, HDMI, DisplayPort", Brightness:"400 cd/m²", Colour:"99% sRGB", Size:'27"', ResponseTime:"5ms", Warranty:"1 year" },
-        description: "HP's 27-inch 4K UHD display with USB-C power delivery. Ideal for design studios, engineering firms and executive offices. Sourced in bulk and shipped across the US.",
-        grade: "", tag: "New Arrival", icon: Icon.monitor,
+        id: 6, category: "Dell", name: "Dell Inspiron 16 (Dc16251)",
+        tagline: "WUXGA touchscreen meets Intel Ultra 7 efficiency.",
+        spec: "Intel Ultra 7-150u | 16GB RAM | 1TB SSD | Win 11 | 16\" TS",
+        specs: { Processor:"Intel Ultra 7-150u", RAM:"16GB DDR5", Storage:"1TB SSD", OS:"Windows 11", Display:"16\" WUXGA Touchscreen", Battery:"Up to 10 hrs", Condition:"New", Warranty:"1 year" },
+        description: "Dell Inspiron 16 brings Intel Ultra 7 to a stunning WUXGA touchscreen. Premium build for executives and power users requiring top-tier performance.",
+        grade: "Grade A+", tag: "New Arrival", image: ["/products/d2.webp","/products/d1.webp"], icon: Icon.laptop,
     },
     {
-        id: 7, category: "Monitors", name: 'LG 24" Full HD IPS',
-        tagline: "Smooth, vibrant visuals with AMD FreeSync.",
-        spec: "1920×1080 | IPS | 75Hz | AMD FreeSync",
-        specs: { Resolution:"1920×1080 FHD", Panel:"IPS Anti-glare", RefreshRate:"75Hz", Sync:"AMD FreeSync", Connectivity:"HDMI, D-Sub", Brightness:"250 cd/m²", Size:'24"', Warranty:"1 year" },
-        description: "LG 24-inch IPS monitor at 75Hz with AMD FreeSync. A high-value option for offices requiring large monitor deployments without breaking the budget.",
-        grade: "", tag: "Bulk Deal", icon: Icon.monitor,
+        id: 7, category: "HP", name: "HP Victus 15 (15-Fa2082wm)",
+        tagline: "Refurbished gaming muscle at a smarter price.",
+        spec: "i5-13420h | 16GB RAM | 512GB | 6GB GPU | Win 11 | 15.6\" Ref",
+        specs: { Processor:"Intel Core i5-13420h", RAM:"16GB DDR5", Storage:"512GB SSD", GPU:"6GB Dedicated Graphics", OS:"Windows 11", Display:"15.6\" FHD 144Hz", Condition:"Refurbished", Warranty:"90 days" },
+        description: "HP Victus 15 gaming laptop refurbished to Grade A. i5-13420h with 6GB dedicated GPU — perfect for gaming, content creation and demanding workloads.",
+        grade: "Grade A", tag: "Best Seller", image: ["/products/v2.jpg","/products/v1.jpg"], icon: Icon.laptop,
     },
     {
-        id: 8, category: "Printers", name: "HP LaserJet Pro M404dn",
-        tagline: "Fast, reliable laser printing for busy offices.",
-        spec: "40 ppm | Auto Duplex | Ethernet | USB",
-        specs: { PrintSpeed:"40 ppm", Duplex:"Automatic", Connectivity:"Ethernet, USB", FirstPageOut:"6.4 sec", MonthlyDuty:"80,000 pages", Toner:"HP 58A / 58X", Paper:"Up to A4", Warranty:"1 year" },
-        description: "HP LaserJet Pro M404dn — industry-leading print speed and reliability for high-volume office use. Stocked in bulk by NIBX for fast US fulfilment.",
-        grade: "", tag: "Best Seller", icon: Icon.printer,
+        id: 8, category: "HP", name: "HP Laptop 15-Fd0150wm",
+        tagline: "Touch-enabled i5 for modern workflow demands.",
+        spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\" TS",
+        specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD Touchscreen", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0150wm features a responsive 15.6\" touchscreen with i5-1334u. Go-to for businesses needing interactive workstations.",
+        grade: "Grade A+", tag: "Best Seller", image: ["/products/y1.jpg"], icon: Icon.laptop,
     },
     {
-        id: 9, category: "Printers", name: "Canon PIXMA G6020 MegaTank",
-        tagline: "Ink-saving MegaTank for high-volume colour printing.",
-        spec: "Inkjet | Wireless | Duplex | 4800×1200 dpi",
-        specs: { Technology:"Inkjet MegaTank", Resolution:"4800×1200 dpi", Connectivity:"Wi-Fi, USB", Duplex:"Automatic", Colour:"Yes — CMYK", Paper:"Up to 8.5×14\"", Tank:"Up to 7,700 pages (black)", Warranty:"1 year" },
-        description: "Canon PIXMA G6020 with refillable MegaTank ink system — drastically reduces per-page cost for businesses with high colour print demands.",
-        grade: "", tag: "", icon: Icon.printer,
+        id: 9, category: "HP", name: "HP Laptop 15-Fd0159wm",
+        tagline: "Intel Core 5 efficiency, touch-first design.",
+        spec: "Intel Core5-120u | 8GB RAM | 512GB SSD | Win 11 | 15.6\" TS",
+        specs: { Processor:"Intel Core 5-120u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD Touchscreen", Battery:"Up to 9 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0159wm uses next-gen Intel Core 5-120u with a 15.6\" touchscreen. Energy-efficient and capable for modern office environments.",
+        grade: "Grade A+", tag: "New Arrival", image: ["/products/e1.jpg"], icon: Icon.laptop,
     },
     {
-        id: 10, category: "Printers", name: "Epson EcoTank ET-4850",
-        tagline: "All-in-one convenience, ultra-low ink costs.",
-        spec: "All-in-One | Inkjet | Wi-Fi | Duplex ADF",
-        specs: { Type:"All-in-One (Print/Scan/Copy/Fax)", Technology:"EcoTank Inkjet", Connectivity:"Wi-Fi, Ethernet, USB", ADF:"35-sheet Auto Document Feeder", Duplex:"Automatic", Yield:"Up to 4,500 pages (black)", Mobile:"Yes — Epson Smart Panel", Warranty:"2 years" },
-        description: "Epson EcoTank ET-4850 — an all-in-one powerhouse with ultra-low running costs. Perfect for SMBs and offices looking to reduce printing costs significantly.",
-        grade: "", tag: "New Arrival", icon: Icon.printer,
+        id: 10, category: "HP", name: "HP OmniBook 5 (16-af1017wm)",
+        tagline: "Ultra 7 flagship performance, beautifully slim.",
+        spec: "Intel Ultra 7-255u | 16GB RAM | 1TB SSD | Win 11 | 16\"",
+        specs: { Processor:"Intel Ultra 7-255u", RAM:"16GB LPDDR5", Storage:"1TB SSD", OS:"Windows 11", Display:"16\" WQXGA IPS", Battery:"Up to 12 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP OmniBook 5 — premium slim laptop powered by Intel Ultra 7-255u. With 1TB SSD and a large 16\" display, built for professionals who demand the best.",
+        grade: "Grade A+", tag: "New Arrival", image: ["/products/om1.webp","/products/om2.webp"], icon: Icon.laptop,
     },
     {
-        id: 11, category: "Desktops", name: "Dell OptiPlex 7090 AiO",
-        tagline: "All-in-one desktop engineered for enterprise.",
-        spec: 'Intel Core i7 | 16GB | 512GB SSD | 23.8" FHD',
-        specs: { Processor:"Intel Core i7-1165G7", RAM:"16GB DDR4", Storage:"512GB SSD", Display:'23.8" FHD IPS Touch', OS:"Windows 11 Pro", Form:"All-in-One", Grade:"A — Tested", Warranty:"90 days" },
-        description: "Dell OptiPlex 7090 All-in-One — a clean, cable-free desktop solution for corporate environments. Grade A certified. Available for bulk ordering across the US.",
-        grade: "Grade A", tag: "Best Seller", icon: Icon.aio,
+        id: 11, category: "HP", name: "HP Laptop 15-Fd0230wm",
+        tagline: "Budget-smart i3 touchscreen for everyday tasks.",
+        spec: "Intel i3-N305 | 8GB RAM | 256GB SSD | Win 11 | 15.6\" TS",
+        specs: { Processor:"Intel Core i3-N305", RAM:"8GB DDR4", Storage:"256GB SSD", OS:"Windows 11", Display:"15.6\" FHD Touchscreen", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0230wm with i3-N305 and touchscreen — cost-effective for schools, entry-level deployments and light productivity.",
+        grade: "Grade A+", tag: "", image: ["/products/kk1.jpg","/products/kk2.jpg"], icon: Icon.laptop,
     },
     {
-        id: 12, category: "Desktops", name: "HP EliteDesk 800 G6 SFF",
-        tagline: "Small footprint, big enterprise performance.",
-        spec: "Intel Core i5 | 8GB | 256GB SSD | Win 11 Pro",
-        specs: { Processor:"Intel Core i5-10500", RAM:"8GB DDR4", Storage:"256GB NVMe SSD", OS:"Windows 11 Pro", Form:"Small Form Factor", Ports:"USB-A, USB-C, DisplayPort, HDMI", Grade:"A — Tested", Warranty:"90 days" },
-        description: "HP EliteDesk 800 G6 SFF — enterprise-grade compact desktop ideal for office rollouts, call centres and educational institutions. Stocked in high volume.",
-        grade: "Grade A", tag: "Bulk Deal", icon: Icon.tower,
+        id: 12, category: "HP", name: "HP Laptop 14-Dq2031",
+        tagline: "Compact 14\" refurb at unbeatable bulk value.",
+        spec: "Intel i3-1115g4 | 4GB RAM | 128GB SSD | Win 11 | 14\" Ref",
+        specs: { Processor:"Intel Core i3-1115g4", RAM:"4GB DDR4", Storage:"128GB SSD", OS:"Windows 11", Display:"14\" HD", Battery:"Up to 7 hrs", Condition:"Refurbished", Warranty:"60 days" },
+        description: "HP 14-Dq2031 refurbished — compact 14\" i3 laptop ideal for budget-conscious buyers, student programs and basic office tasks. Available in high volume.",
+        grade: "Grade A", tag: "Bulk Deal", image: ["/products/dq1.jpg","/products/dq2.jpg"], icon: Icon.laptop,
     },
     {
-        id: 13, category: "Desktops", name: "Lenovo ThinkCentre M720 Tower",
-        tagline: "Expandable tower built for long-term deployments.",
-        spec: "Intel Core i7 | 32GB | 1TB HDD + 256GB SSD",
-        specs: { Processor:"Intel Core i7-8700", RAM:"32GB DDR4", Storage:"256GB SSD + 1TB HDD", OS:"Windows 10 Pro", Form:"Tower", Expansion:"PCIe x16, M.2, 3×3.5\" Bays", Grade:"B — Minor wear", Warranty:"60 days" },
-        description: "Lenovo ThinkCentre M720 Tower with massive RAM and dual storage — ideal for workloads requiring power and expandability. Grade B cosmetic only, fully functional.",
-        grade: "Grade B", tag: "", icon: Icon.tower,
+        id: 13, category: "HP", name: "HP Laptop 14-Fq0110",
+        tagline: "Ryzen 3 portability at an accessible price.",
+        spec: "AMD Ryzen 3 3250u | 4GB RAM | 128GB SSD | Win 11 | 14\"",
+        specs: { Processor:"AMD Ryzen 3 3250u", RAM:"4GB DDR4", Storage:"128GB SSD", OS:"Windows 11", Display:"14\" HD", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 14-Fq0110 with AMD Ryzen 3 3250u — lightweight and efficient 14\" for everyday use. Great for students and budget corporate rollouts.",
+        grade: "Grade B", tag: "Bulk Deal", image: ["/products/ry1.jpg","/products/ry2.jpg"], icon: Icon.laptop,
     },
     {
-        id: 14, category: "Components", name: "Samsung 870 EVO 1TB SSD",
-        tagline: "Industry-leading SATA SSD for system upgrades.",
-        spec: 'SATA 6Gb/s | 560 MB/s Read | 2.5"',
-        specs: { Interface:"SATA 6Gb/s", ReadSpeed:"560 MB/s", WriteSpeed:"530 MB/s", Capacity:"1TB", FormFactor:'2.5"', NAND:"Samsung MKX V-NAND", Endurance:"600 TBW", Warranty:"5 years" },
-        description: "Samsung 870 EVO 1TB — the gold standard for SATA SSD upgrades. Ideal for bulk system refreshes, refurbished laptop upgrades and IT deployments across the US.",
-        grade: "", tag: "Best Seller", icon: Icon.ssd,
+        id: 14, category: "HP", name: "HP Laptop 15-Dy2152",
+        tagline: "Proven i5 performance, refurbished to Grade A.",
+        spec: "Intel i5-1135g7 | 8GB RAM | 512GB SSD | 15.6\" Ref",
+        specs: { Processor:"Intel Core i5-1135g7", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD", Battery:"Up to 8 hrs", Condition:"Refurbished", Warranty:"90 days" },
+        description: "HP 15-Dy2152 refurbished — reliable i5-1135g7 for business tasks. Quality-checked and graded for consistent performance across bulk orders.",
+        grade: "Grade A", tag: "", image: ["/products/yy1.jpg","/products/yy2.jpg"], icon: Icon.laptop,
     },
     {
-        id: 15, category: "Components", name: "Seagate Barracuda 2TB HDD",
-        tagline: "Reliable high-capacity storage at bulk pricing.",
-        spec: 'SATA 6Gb/s | 7200 RPM | 3.5" Internal',
-        specs: { Interface:"SATA 6Gb/s", Capacity:"2TB", RPM:"7200 RPM", Cache:"256MB", FormFactor:'3.5" Internal', Endurance:"1,000,000 hours MTTF", Transfer:"220 MB/s", Warranty:"2 years" },
-        description: "Seagate Barracuda 2TB — a trusted high-capacity HDD for desktops, NAS systems and archival storage. Available in large quantities for enterprise and institutional deployments.",
-        grade: "", tag: "Bulk Deal", icon: Icon.hdd,
+        id: 15, category: "HP", name: "HP Laptop 15-Fd0133wm",
+        tagline: "Refurbished i3 for large-scale deployments.",
+        spec: "Intel i3-N305 | 8GB RAM | 256GB SSD | Win 11 | 15.6\" Ref",
+        specs: { Processor:"Intel Core i3-N305", RAM:"8GB DDR4", Storage:"256GB SSD", OS:"Windows 11", Display:"15.6\" FHD", Battery:"Up to 7 hrs", Condition:"Refurbished", Warranty:"60 days" },
+        description: "HP 15-Fd0133wm refurbished — budget-friendly i3-N305 ideal for large-scale educational and corporate deployments. NIBX-graded and tested to Grade A.",
+        grade: "Grade A", tag: "Bulk Deal", image: ["/products/oo1.webp"], icon: Icon.laptop,
     },
     {
-        id: 16, category: "Components", name: "NVIDIA GTX 1650 4GB GDDR6",
-        tagline: "Entry-level GPU power for display and compute.",
-        spec: "PCIe 3.0 | HDMI + DP + DVI | Low Profile",
-        specs: { GPU:"NVIDIA GeForce GTX 1650", VRAM:"4GB GDDR6", Interface:"PCIe 3.0 x16", Outputs:"HDMI, DisplayPort, DVI", TDP:"75W (no external power)", Profile:"Low Profile available", Driver:"NVIDIA 500+ series", Warranty:"1 year" },
-        description: "NVIDIA GTX 1650 with GDDR6 — perfect for multi-monitor office setups and light GPU compute. Low-profile variant available for SFF systems. Stocked in volume.",
-        grade: "", tag: "New Arrival", icon: Icon.gpu,
+        id: 16, category: "HP", name: "HP Laptop 14-Dq2078wm",
+        tagline: "Compact i5 power in a portable 14\" package.",
+        spec: "Intel i5-1135g7 | 8GB RAM | 256GB SSD | Win 11 | 14\"",
+        specs: { Processor:"Intel Core i5-1135g7", RAM:"8GB DDR4", Storage:"256GB SSD", OS:"Windows 11", Display:"14\" FHD", Battery:"Up to 9 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 14-Dq2078wm brings i5-1135g7 performance to a compact 14\" form factor. Lightweight and capable for mobile professionals and business travelers.",
+        grade: "Grade A+", tag: "", image: IMG.hp_14, icon: Icon.laptop,
     },
     {
-        id: 17, category: "Components", name: "Crucial 16GB DDR4 RAM",
-        tagline: "Plug-and-play memory upgrade for any system.",
-        spec: "3200MHz | CL22 | Unbuffered | DIMM",
-        specs: { Capacity:"16GB (1×16GB)", Speed:"DDR4-3200 MHz", Latency:"CL22", Type:"Unbuffered DIMM", Voltage:"1.2V", Compatibility:"Intel & AMD", ECC:"No", Warranty:"Lifetime" },
-        description: "Crucial 16GB DDR4 3200MHz — reliable, high-compatibility RAM ideal for bulk system upgrades and builds. Sourced and stocked by NIBX for fast US delivery.",
-        grade: "", tag: "", icon: Icon.ram,
+        id: 17, category: "HP", name: "HP Laptop 15-Dy2131wm",
+        tagline: "Solid i3 value for high-volume budget orders.",
+        spec: "Intel i3-1115g4 | 8GB RAM | 256GB SSD | Win 10 | 15.6\"",
+        specs: { Processor:"Intel Core i3-1115g4", RAM:"8GB DDR4", Storage:"256GB SSD", OS:"Windows 10", Display:"15.6\" HD", Battery:"Up to 7 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Dy2131wm with i3-1115g4 and 8GB RAM — reliable budget option for bulk corporate or educational deployments. Ships with Windows 10 for compatibility.",
+        grade: "Grade B", tag: "Bulk Deal", image: IMG.hp_silver, icon: Icon.laptop,
     },
     {
-        id: 18, category: "Accessories", name: "Logitech H390 USB Headset",
-        tagline: "Noise-cancelling clarity for every call.",
-        spec: "Noise-cancelling mic | USB-A | Inline controls",
-        specs: { Driver:"40mm", Frequency:"20Hz–20kHz", Microphone:"Noise-cancelling, flexible boom", Connectivity:"USB-A", Controls:"Inline (volume, mute)", Cable:"2.5m", Padding:"Foam ear cups", Warranty:"2 years" },
-        description: "Logitech H390 USB Headset — the go-to choice for call centres, remote workers and office deployments. Digital audio, noise-cancelling mic and easy USB plug-and-play. Available in bulk kits.",
-        grade: "", tag: "Best Seller", icon: Icon.headset,
+        id: 18, category: "HP", name: "HP Laptop 14-Dq2032wm",
+        tagline: "14\" touchscreen productivity without the price tag.",
+        spec: "Intel i3-1115g4 | 4GB RAM | 128GB SSD | Win 11 | 14\" TS",
+        specs: { Processor:"Intel Core i3-1115g4", RAM:"4GB DDR4", Storage:"128GB SSD", OS:"Windows 11", Display:"14\" Touchscreen", Battery:"Up to 7 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 14-Dq2032wm — 14\" touchscreen i3 for educational apps and light business use. An excellent entry point for touch-first deployments.",
+        grade: "Grade A+", tag: "", image: IMG.hp_14, icon: Icon.laptop,
     },
     {
-        id: 19, category: "Accessories", name: "Dell KM3322W Wireless Combo",
-        tagline: "Wireless freedom for the modern workstation.",
-        spec: "Keyboard + Mouse | 2.4GHz | USB Nano",
-        specs: { Type:"Keyboard + Mouse Combo", Connectivity:"2.4GHz Wireless", Receiver:"USB Nano", KeyboardBattery:"Up to 36 months", MouseBattery:"Up to 36 months", DPI:"1000 dpi", Layout:"Full-size US Layout", Warranty:"1 year" },
-        description: "Dell KM3322W wireless keyboard and mouse combo — reliable, long-battery life and minimal cable clutter. Ideal for office rollouts. Available in quantity bundles.",
-        grade: "", tag: "Bulk Deal", icon: Icon.keyboard,
+        id: 19, category: "ASUS", name: "ASUS TUF Gaming A16 (FA607NUG)",
+        tagline: "Ryzen 7 gaming beast with 16GB dedicated GPU.",
+        spec: "Ryzen 7-7445hs | 16GB RAM | 512GB SSD | 16GB GPU | 16\"",
+        specs: { Processor:"AMD Ryzen 7 7445hs", RAM:"16GB DDR5", Storage:"512GB SSD", GPU:"NVIDIA RTX 4060 16GB", OS:"Windows 11", Display:"16\" FHD 165Hz", Condition:"New", Warranty:"1 year" },
+        description: "ASUS TUF Gaming A16 — Ryzen 7-7445hs with 16GB NVIDIA GPU for gaming, 3D rendering and AI workloads. MIL-STD-810H certified tough build.",
+        grade: "Grade A+", tag: "New Arrival", image: IMG.asus_tuf, icon: Icon.laptop,
     },
     {
-        id: 20, category: "Accessories", name: "Anker 10-Port USB 3.0 Hub",
-        tagline: "Expand connectivity for any workstation setup.",
-        spec: "7× USB-A 3.0 + 3× Charging | Power Adapter",
-        specs: { USBPorts:"7× USB-A 3.0 (5Gbps)", ChargingPorts:"3× USB Charging (2.4A)", PowerSupply:"Included 60W adapter", Compatibility:"Win, macOS, Linux", Cable:"USB 3.0 Type-A, 2ft", Material:"Aluminium alloy", LEDs:"Yes — port status LEDs", Warranty:"18 months" },
-        description: "Anker 10-port USB 3.0 hub — perfect for dense workstation setups requiring multiple peripherals. Powered hub with dedicated charging ports. Bulk orders welcome.",
-        grade: "", tag: "", icon: Icon.hub,
+        id: 20, category: "HP", name: "HP Laptop 15-Fd0183wm",
+        tagline: "i7 powerhouse with 1TB of fast storage.",
+        spec: "Intel i7-1355u | 16GB RAM | 1TB SSD | Win 11 | 15.6\"",
+        specs: { Processor:"Intel Core i7-1355u", RAM:"16GB DDR4", Storage:"1TB SSD", OS:"Windows 11", Display:"15.6\" FHD IPS", Battery:"Up to 9 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0183wm with Intel i7-1355u, 16GB RAM and 1TB SSD — high-performance for demanding professional workloads. Great for developers, analysts and creators.",
+        grade: "Grade A+", tag: "Best Seller", image: IMG.hp_premium, icon: Icon.laptop,
+    },
+    {
+        id: 21, category: "HP", name: "HP Laptop 15-Fd0082wm",
+        tagline: "Ultra-affordable N200 for basic computing needs.",
+        spec: "Intel N200 | 4GB RAM | 128GB SSD | Win 11 | 15.6\"",
+        specs: { Processor:"Intel N200", RAM:"4GB DDR4", Storage:"128GB SSD", OS:"Windows 11", Display:"15.6\" HD", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0082wm with Intel N200 — the most budget-friendly option for schools, NGOs and basic office setups. Extremely low cost per unit for large deployments.",
+        grade: "Grade B", tag: "Bulk Deal", image: IMG.hp_budget, icon: Icon.laptop,
+    },
+    {
+        id: 22, category: "ASUS", name: "ASUS Vivobook F1504VAP",
+        tagline: "Slim Core 5 ultrabook for modern professionals.",
+        spec: "Intel Core5-120u | 16GB RAM | 512GB SSD | Win 11 | 15.6\"",
+        specs: { Processor:"Intel Core 5-120u", RAM:"16GB LPDDR5", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD OLED", Battery:"Up to 10 hrs", Condition:"New", Warranty:"1 year" },
+        description: "ASUS Vivobook F1504VAP — sleek ultrabook with Intel Core 5-120u, 16GB LPDDR5 and OLED display. Perfect for design professionals and executives.",
+        grade: "Grade A+", tag: "New Arrival", image: IMG.asus_vivo, icon: Icon.laptop,
+    },
+    {
+        id: 23, category: "HP", name: "HP Laptop 15-Fd0152wm",
+        tagline: "Core i5 reliability for everyday excellence.",
+        spec: "Intel i5-1334u | 8GB RAM | 512GB SSD | Win 11 | 15.6\"",
+        specs: { Processor:"Intel Core i5-1334u", RAM:"8GB DDR4", Storage:"512GB SSD", OS:"Windows 11", Display:"15.6\" FHD", Battery:"Up to 8 hrs", Condition:"New", Warranty:"1 year" },
+        description: "HP 15-Fd0152wm with i5-1334u for smooth everyday tasks. A trusted, reliable choice for business deployments, available in large quantities.",
+        grade: "Grade A+", tag: "", image: IMG.hp_silver, icon: Icon.laptop,
     },
 ];
 
-export const categoryList = ["All", "Laptops", "Monitors", "Printers", "Desktops", "Components", "Accessories"];
+export const categoryList = ["All", "HP", "ASUS", "Dell"];
