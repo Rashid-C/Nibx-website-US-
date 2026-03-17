@@ -212,11 +212,11 @@ const ProductDetail = () => {
                                         className="flex flex-col gap-2.5"
                                     >
                                         {[
-                                            { icon: "🛡️", label: "Condition",      val: product.specs?.Condition || "New" },
+                                            { icon: "🛡️", label: "Condition",      val: "Certified Refurbished" },
                                             { icon: "✅", label: "Quality Check",  val: "Individually tested by NIBX" },
                                             { icon: "📋", label: "Warranty",       val: product.specs?.Warranty || "1 year" },
                                             { icon: "📦", label: "Bulk Available", val: "Yes — contact us for volume pricing" },
-                                            { icon: "🚚", label: "Shipping",       val: "US nationwide · International via AZC" },
+                                            { icon: "🚚", label: "Shipping",       val: "US nationwide · All 50 states, tracked & insured" },
                                         ].map((row) => (
                                             <div key={row.label} className="flex items-start gap-3 p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800">
                                                 <span className="text-base mt-0.5">{row.icon}</span>

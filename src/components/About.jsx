@@ -106,12 +106,7 @@ const About = () => {
                             We serve enterprises, resellers, school districts and institutions across all 50 states — supplying bulk laptops, monitors, printers, desktops, components and accessories. Every unit is quality-graded and fully documented before leaving our facility.
                         </p>
                         <p>
-                            Our international arm,{" "}
-                            <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
-                                className="font-semibold text-primary hover:underline underline-offset-2">
-                                AZC Electronics Trading LLC
-                            </a>
-                            , extends NIBX operations into the UAE and GCC market — providing the same precision logistics to international partners.
+                            All stock is individually graded and documented before dispatch — ensuring every bulk order meets the same standard regardless of destination.
                         </p>
                     </div>
 
@@ -133,30 +128,16 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* AZC subsidiary card */}
-                    <div className="relative z-10 rounded-2xl bg-primary/6 dark:bg-primary/10 border border-primary/15 dark:border-primary/20 p-5">
-                        <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-3">UAE Subsidiary</p>
-                        <div className="flex items-center gap-3 mb-3">
-                            <div className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                                    <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                            </div>
-                            <p className="font-bold text-sm text-gray-800 dark:text-white">AZC Electronics Trading LLC</p>
+                    {/* Contact CTA row */}
+                    <div className="relative z-10 rounded-2xl bg-primary/6 dark:bg-primary/10 border border-primary/15 dark:border-primary/20 p-5 flex items-center gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.42 2 2 0 0 1 3.54 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.88-.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16.5z"/></svg>
                         </div>
-                        <div className="flex flex-wrap gap-2">
-                            <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 text-xs font-semibold text-primary border border-primary/30 bg-white/60 dark:bg-white/6 hover:bg-primary hover:text-white hover:border-primary px-3 py-1.5 rounded-full transition-all duration-200">
-                                azcstore.com
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10" /></svg>
-                            </a>
-                            <a href="https://www.azcstore.info/" target="_blank" rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 text-xs font-semibold text-primary border border-primary/30 bg-white/60 dark:bg-white/6 hover:bg-primary hover:text-white hover:border-primary px-3 py-1.5 rounded-full transition-all duration-200">
-                                azcstore.info
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10" /></svg>
-                            </a>
+                        <div>
+                            <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-0.5">Get a Quote</p>
+                            <p className="text-sm text-gray-600 dark:text-gray-300">Reach out for bulk pricing and availability.</p>
                         </div>
+                        <a href="#contact-us" className="ml-auto btn-primary text-xs px-4 whitespace-nowrap">Contact Us</a>
                     </div>
                 </motion.div>
 
@@ -218,7 +199,7 @@ const About = () => {
                         </motion.div>
                     </div>
 
-                    {/* US + UAE presence card */}
+                    {/* US coverage card */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -226,23 +207,14 @@ const About = () => {
                         viewport={{ once: false }}
                         className={`${glass} rounded-2xl p-5 relative overflow-hidden`}
                     >
-                        <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Global Presence</p>
-                        <div className="flex items-center gap-4">
-                            <div className="flex-1">
-                                <div className="flex items-center gap-2 mb-1">
-                                    <span className="w-5 h-3.5 inline-block rounded-sm overflow-hidden shrink-0" style={{ background: "linear-gradient(180deg,#B22234 33%,#fff 33%,#fff 66%,#3C3B6E 66%)" }}>
-                                        <span className="block w-full h-full" style={{ background: "repeating-linear-gradient(180deg,#B22234 0,#B22234 14%,#fff 14%,#fff 28%,#B22234 28%)" }} /></span>
-                                    <p className="text-xs font-bold text-gray-800 dark:text-white">United States</p>
-                                </div>
-                                <p className="text-[10px] text-gray-400 dark:text-gray-500">All 50 states · Miami HQ</p>
-                            </div>
-                            <div className="w-px h-8 bg-gray-200 dark:bg-white/10 shrink-0" />
-                            <div className="flex-1">
-                                <div className="flex items-center gap-2 mb-1">
-                                    <span className="w-5 h-3.5 inline-block rounded-sm shrink-0 bg-linear-to-r from-[#00732F] via-white to-black" />
-                                    <p className="text-xs font-bold text-gray-800 dark:text-white">UAE / GCC</p>
-                                </div>
-                                <p className="text-[10px] text-gray-400 dark:text-gray-500">Via AZC Electronics LLC</p>
+                        <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Coverage</p>
+                        <div className="flex items-center gap-3">
+                            <span className="w-6 h-4 inline-block rounded-sm overflow-hidden shrink-0" style={{ background: "linear-gradient(180deg,#B22234 33%,#fff 33%,#fff 66%,#3C3B6E 66%)" }}>
+                                <span className="block w-full h-full" style={{ background: "repeating-linear-gradient(180deg,#B22234 0,#B22234 14%,#fff 14%,#fff 28%,#B22234 28%)" }} />
+                            </span>
+                            <div>
+                                <p className="text-xs font-bold text-gray-800 dark:text-white">United States — All 50 States</p>
+                                <p className="text-[10px] text-gray-400 dark:text-gray-500 mt-0.5">Miami HQ · Nationwide freight & delivery</p>
                             </div>
                         </div>
                     </motion.div>
@@ -311,7 +283,7 @@ const About = () => {
                         ),
                         label: "Distribution",
                         title: "US-Wide & International",
-                        desc: "Freight from single pallets to full truckloads — covering all 50 states, with cross-border capability to UAE and GCC markets.",
+                        desc: "Freight from single pallets to full truckloads — covering all 50 states with tracked, insured delivery and reliable lead times.",
                         color: "from-blue-500/8 to-cyan-500/5",
                         border: "group-hover:border-blue-500/30",
                     },

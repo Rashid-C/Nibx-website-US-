@@ -43,7 +43,7 @@ const workData = [
     },
     {
         title: "UAE Cross-Border Shipment",
-        description: "Coordinated a 2,000-unit electronics export to AZC Electronics Trading LLC for GCC enterprise distribution — customs-cleared and door-delivered.",
+                description: "Coordinated a 2,000-unit electronics export for international enterprise distribution — customs-cleared, freight-forwarded and door-delivered.",
         image: assets.work_dashboard_management,
         tag: "Export",
         metric: "2,000 units",

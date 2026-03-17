@@ -10,6 +10,7 @@ import Teams from "./components/Teams";
 import ContactUs from "./components/ContactUs";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 
@@ -119,10 +120,12 @@ const App = () => {
           <Route path="/products/:id" element={<><ProductDetail /><Footer theme={theme} /></>} />
         </Routes>
 
+        <WhatsAppButton />
+
         {/* custom cursor ring */}
         <div
           ref={outlineRef}
-          className={`fixed top-0 left-0 h-10 w-10 rounded-full pointer-events-none z-[9999] transition-colors duration-200 ${
+          className={`fixed top-0 left-0 h-10 w-10 rounded-full pointer-events-none z-9999 transition-colors duration-200 ${
             menuCursorActive ? "border border-white/95 shadow-[0_0_26px_rgba(255,255,255,0.35)]" : "border border-primary"
           }`}
           style={{ transition: "transform 0.1s ease-out, border-color 0.2s ease-out, box-shadow 0.2s ease-out" }}
@@ -130,7 +133,7 @@ const App = () => {
         {/* custom cursor dot */}
         <div
           ref={dotRef}
-          className={`fixed top-0 left-0 h-3 w-3 rounded-full pointer-events-none z-[9999] transition-colors duration-200 ${
+          className={`fixed top-0 left-0 h-3 w-3 rounded-full pointer-events-none z-9999 transition-colors duration-200 ${
             menuCursorActive ? "bg-white" : "bg-primary"
           }`}
         />

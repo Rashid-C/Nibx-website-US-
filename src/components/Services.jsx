@@ -63,7 +63,7 @@ const services = [
     {
         num: "05",
         title: "International Export",
-        description: "Cross-border logistics to UAE and GCC markets managed through our subsidiary AZC Electronics Trading LLC (azcstore.com / azcstore.info).",
+        description: "Cross-border freight and export logistics — customs documentation, coordinated shipping and door-to-door delivery for international orders.",
         color: "from-sky-500/10 to-indigo-500/5",
         accent: "text-sky-600 dark:text-sky-400",
         border: "hover:border-sky-400/30",

@@ -102,7 +102,7 @@ const Hero = () => {
                         {[
                             { value: "50,000 sq ft", label: "Miami Warehouse" },
                             { value: "10,000+",      label: "Units in Stock" },
-                            { value: "US & UAE",     label: "Global Ops" },
+                            { value: "All 50",       label: "US States" },
                         ].map((stat, i) => (
                             <div key={i} className="flex-1 px-5 py-4">
                                 <p className="text-lg sm:text-2xl font-black bg-linear-to-r from-primary to-sky-400 bg-clip-text text-transparent whitespace-nowrap">

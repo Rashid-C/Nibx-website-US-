@@ -47,7 +47,7 @@ const TrustedBy = () => {
             >
                 {[
                     { icon: "🇺🇸", label: "US Based Operations" },
-                    { icon: "🏢", label: "UAE Partner: AZC Electronics" },
+                    { icon: "🏢", label: "Enterprise & Bulk Supplier" },
                     { icon: "📦", label: "Bulk Orders Welcome" },
                     { icon: "✅", label: "Quality Checked Stock" },
                 ].map((badge, i) => (

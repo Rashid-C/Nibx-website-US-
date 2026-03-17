@@ -110,12 +110,8 @@ const ProductCard = ({ product, index, onClick }) => {
 
                 {/* Footer */}
                 <div className="mt-auto pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
-                    <span className={`text-[10px] font-semibold px-2 py-0.5 rounded ${
-                        product.specs?.Condition === "Refurbished"
-                            ? "bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400"
-                            : "bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400"
-                    }`}>
-                        {product.specs?.Condition || "New"}
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
+                        Certified Refurbished
                     </span>
                     <span className="text-[10px] text-gray-300 dark:text-gray-600">{product.specs?.Warranty || ""}</span>
                 </div>
@@ -215,7 +211,7 @@ const Products = () => {
 
                 <Title
                     title="Our Laptop Catalog"
-                    desc="HP, ASUS and Dell laptops — sourced, tested and shipped in bulk across the United States and globally via AZC Electronics UAE."
+                    desc="Certified refurbished HP, ASUS and Dell laptops — individually tested, quality-graded and shipped in bulk across the United States."
                 />
 
                 <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -223,7 +219,7 @@ const Products = () => {
                         { label: `${products.length} Models` },
                         { label: "Quality Checked" },
                         { label: "US Operations" },
-                        { label: "UAE: AZC Electronics" },
+                        { label: "All 50 US States" },
                     ].map((b) => (
                         <span key={b.label} className="text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 font-medium">
                             {b.label}
@@ -338,16 +334,15 @@ const Products = () => {
                         Need a specific quantity or spec?
                     </h2>
                     <p className="text-gray-500 dark:text-white/60 max-w-lg mx-auto mb-8 text-sm sm:text-base leading-relaxed">
-                        Tell us your specs, quantity and timeline. NIBX handles sourcing, quality-checking and delivery — and internationally via{" "}
-                        <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline underline-offset-2">AZC Electronics</a>{" "}in the UAE.
+                        Tell us your specs, quantity and timeline. NIBX handles sourcing, quality-checking and bulk delivery across all 50 US states.
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         <a href="/#contact-us" className="btn-primary px-8 shadow-lg shadow-primary/25">
                             Get a Bulk Quote
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
-                        <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8">
-                            Visit AZC Store ↗
+                        <a href="/#contact-us" className="btn-secondary px-8">
+                            Contact Us
                         </a>
                     </div>
                 </div>
