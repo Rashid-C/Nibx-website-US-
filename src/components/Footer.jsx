@@ -52,24 +52,24 @@ const Footer = () => {
                         <div className="text-xs text-white/35 space-y-0.5">
                             <p className="font-semibold text-white/50 uppercase tracking-wider text-[10px]">NIBX L.L.C. — US HQ</p>
                             <p>7931 NW 68th St, Miami, Florida 33166</p>
-                            <p className="pt-1 font-semibold text-white/50 uppercase tracking-wider text-[10px]">AZC Electronics Trading LLC</p>
-                            <p>UAE ·{" "}
+                            {/* <p className="pt-1 font-semibold text-white/50 uppercase tracking-wider text-[10px]">AZC Electronics Trading LLC</p> */}
+                            {/* <p>UAE ·{" "}
                                 <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="text-primary/80 hover:text-primary transition-colors">
                                     azcstore.com
                                 </a>
-                            </p>
+                            </p> */}
                         </div>
                         <div className="flex items-center gap-2.5">
                             {[
-                                { href: "https://facebook.com",  icon: assets.facebook_icon,  label: "Facebook" },
-                                { href: "https://twitter.com",   icon: assets.twitter_icon,   label: "Twitter" },
-                                { href: "https://instagram.com", icon: assets.instagram_icon, label: "Instagram" },
-                                { href: "https://linkedin.com",  icon: assets.linkedin_icon,  label: "LinkedIn" },
+                                { icon: assets.facebook_icon,  label: "Facebook" },
+                                { icon: assets.twitter_icon,   label: "Twitter" },
+                                { icon: assets.instagram_icon, label: "Instagram" },
+                                { icon: assets.linkedin_icon,  label: "LinkedIn" },
                             ].map((s) => (
-                                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                                    className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/6 border border-white/10 hover:bg-primary/30 hover:border-primary/50 transition-all duration-200">
+                                <div key={s.label} aria-label={s.label}
+                                    className="w-8 h-8 flex items-center justify-center rounded-lg bg-white/6 border border-white/10">
                                     <img src={s.icon} alt="" aria-hidden="true" className="w-3.5 h-3.5 invert opacity-60" />
-                                </a>
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -92,10 +92,10 @@ const Footer = () => {
                                 </li>
                             ))}
                             <li>
-                                <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
+                                {/* <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
                                     className="text-xs text-primary/60 hover:text-primary transition-colors duration-200">
                                     AZC UAE ↗
-                                </a>
+                                </a> */}
                             </li>
                         </ul>
                     </div>
@@ -123,8 +123,8 @@ const Footer = () => {
 
                 {/* Bottom bar */}
                 <div className="pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-white/25">
-                    <p>© 2026 NIBX L.L.C. All rights reserved.</p>
-                    <p>
+                    <p className="text-xs">© 2026 NIBX L.L.C. All rights reserved.</p>
+                    {/* <p>
                         Designed &amp; Developed by{" "}
                         <a href="https://rashidc.site" target="_blank" rel="noopener noreferrer" className="text-primary/60 hover:text-primary transition-colors">
                             Rashid C
@@ -133,7 +133,7 @@ const Footer = () => {
                         <a href="https://www.linkedin.com/in/rashid-c" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">
                             LinkedIn
                         </a>
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </footer>

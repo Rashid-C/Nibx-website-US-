@@ -83,7 +83,7 @@ export default assets
 
 export const teamData = [
   { name: 'NIBAL  MOIDU',  title: 'CEO & Founder',            image: nibalboss },
-  { name: 'RASHID C',     title: 'Software Developer',        image: rashid_c, link: 'https://rashidc.site/' },
+  { name: 'RASHID C',     title: 'Software Developer',        image: rashid_c },
   { name: 'QUAID JOHAR',        title: 'Main Accountant',           image: 'https://randomuser.me/api/portraits/men/32.jpg' },
   { name: 'ZESHAN',       title: 'Manager',                image: 'https://randomuser.me/api/portraits/men/45.jpg' },
   { name: 'DHANEESH',       title: 'Sr. Sales',                 image: 'https://randomuser.me/api/portraits/men/52.jpg' },
