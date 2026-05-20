@@ -52,12 +52,12 @@ const Footer = () => {
                         <div className="text-xs text-white/35 space-y-0.5">
                             <p className="font-semibold text-white/50 uppercase tracking-wider text-[10px]">NIBX L.L.C. — US HQ</p>
                             <p>7931 NW 68th St, Miami, Florida 33166</p>
-                            {/* <p className="pt-1 font-semibold text-white/50 uppercase tracking-wider text-[10px]">AZC Electronics Trading LLC</p> */}
-                            {/* <p>UAE ·{" "}
+                            <p className="pt-1 font-semibold text-white/50 uppercase tracking-wider text-[10px]">AZC Electronics Trading LLC</p>
+                            <p>UAE ·{" "}
                                 <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="text-primary/80 hover:text-primary transition-colors">
                                     azcstore.com
                                 </a>
-                            </p> */}
+                            </p>
                         </div>
                         <div className="flex items-center gap-2.5">
                             {[
@@ -92,10 +92,10 @@ const Footer = () => {
                                 </li>
                             ))}
                             <li>
-                                {/* <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
+                                <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer"
                                     className="text-xs text-primary/60 hover:text-primary transition-colors duration-200">
                                     AZC UAE ↗
-                                </a> */}
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -124,7 +124,7 @@ const Footer = () => {
                 {/* Bottom bar */}
                 <div className="pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-white/25">
                     <p className="text-xs">© 2026 NIBX L.L.C. All rights reserved.</p>
-                    {/* <p>
+                    <p>
                         Designed &amp; Developed by{" "}
                         <a href="https://rashidc.site" target="_blank" rel="noopener noreferrer" className="text-primary/60 hover:text-primary transition-colors">
                             Rashid C
@@ -133,7 +133,7 @@ const Footer = () => {
                         <a href="https://www.linkedin.com/in/rashid-c" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">
                             LinkedIn
                         </a>
-                    </p> */}
+                    </p>
                 </div>
             </div>
         </footer>
