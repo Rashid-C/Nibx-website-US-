@@ -100,7 +100,7 @@ const About = () => {
                     <div className="space-y-4 text-sm sm:text-[15px] text-gray-600 dark:text-gray-300 leading-relaxed relative z-10">
                         <p>
                             <span className="font-semibold text-gray-900 dark:text-white">NIBX L.L.C.</span> is a registered US company headquartered at{" "}
-                            <span className="font-medium text-gray-800 dark:text-white/90">7931 NW 68th St, Miami, Florida 33166</span>. We operate a 50,000 sq ft climate-controlled warehouse facility — the central hub for all procurement, storage, quality inspection and distribution activity.
+                            <span className="font-medium text-gray-800 dark:text-white/90">8434 NW 66th Street, Miami, FL 33166</span>. We operate a 50,000 sq ft climate-controlled warehouse facility — the central hub for all procurement, storage, quality inspection and distribution activity.
                         </p>
                         <p>
                             We serve enterprises, resellers, school districts and institutions across all 50 states — supplying bulk laptops, monitors, printers, desktops, components and accessories. Every unit is quality-graded and fully documented before leaving our facility.
@@ -122,8 +122,8 @@ const About = () => {
                         </div>
                         <div>
                             <p className="text-xs font-bold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">US Headquarters</p>
-                            <p className="font-semibold text-sm text-gray-800 dark:text-white">7931 NW 68th St</p>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Miami, Florida 33166</p>
+                            <p className="font-semibold text-sm text-gray-800 dark:text-white">8434 NW 66th Street</p>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">Miami, FL 33166</p>
                             <p className="text-sm font-medium text-gray-700 dark:text-gray-300">United States of America</p>
                         </div>
                     </div>

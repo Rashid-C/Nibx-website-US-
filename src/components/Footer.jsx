@@ -51,13 +51,13 @@ const Footer = () => {
                         </p>
                         <div className="text-xs text-white/35 space-y-0.5">
                             <p className="font-semibold text-white/50 uppercase tracking-wider text-[10px]">NIBX L.L.C. — US HQ</p>
-                            <p>7931 NW 68th St, Miami, Florida 33166</p>
+                            <p>8434 NW 66th Street, Miami, FL 33166</p>
                             <p className="pt-1 font-semibold text-white/50 uppercase tracking-wider text-[10px]">AZC Electronics Trading LLC</p>
-                            <p>UAE ·{" "}
+                            {/* <p>UAE ·{" "}
                                 <a href="https://www.azcstore.com/" target="_blank" rel="noopener noreferrer" className="text-primary/80 hover:text-primary transition-colors">
                                     azcstore.com
                                 </a>
-                            </p>
+                            </p> */}
                         </div>
                         <div className="flex items-center gap-2.5">
                             {[
